@@ -1,0 +1,36 @@
+html {
+  font-size: 10px;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background: linear-gradient(to right, #ec2F4B, #009FFF);
+}
+
+header nav .pagemenu h1 {
+  display: inline-block;
+  color: white;
+  font-size: 1.6rem;
+  margin: 10px 20px 10px 20px;
+}
+
+body footer, body footer .footerdiv {
+  display: block;
+  padding: 24px 0 0;
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  color: #fff;
+  font-size: 14px;
+}
+
+body footer .footerdiv .footerdivone, .footerdivtwo, .footerdivthree {
+  display: block;
+  float: left;
+  width: 18%;
+}
