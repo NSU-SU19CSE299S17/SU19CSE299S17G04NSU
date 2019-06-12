@@ -16,21 +16,39 @@ header nav .pagemenu h1 {
   display: inline-block;
   color: white;
   font-size: 1.6rem;
-  margin: 10px 20px 10px 20px;
+  margin: 1rem 2rem 1rem 2rem;
 }
 
-body footer, body footer .footerdiv {
-  display: block;
-  padding: 24px 0 0;
+ body footer .footerdiv {
   position: relative;
   width: 80%;
   margin: 0 auto;
   color: #fff;
-  font-size: 14px;
+  font-size: 1.4rem;
+  height: 20rem;
 }
 
-body footer .footerdiv .footerdivone, .footerdivtwo, .footerdivthree {
+body footer .footerdivone {
   display: block;
   float: left;
+  width: 18%;
+}
+body footer .footerdivtwo {
+  display: block;
+  float: left;
+  width: 18%;
+}
+body footer .footerdivthree {
+  display: block;
+  float: left;
+  width: 18%;
+}
+
+body footer .footerdivfour {
+  display: block;
+  float: left;
+  width: 18%;
+}
+body footer .footerdivfive {
   width: 18%;
 }
