@@ -19,12 +19,42 @@ header nav .pagemenu h1 {
   margin: 1rem 2rem 1rem 2rem;
 }
 
+
+/* body section */
+body section .mainBodyDiv{
+  background-color: #57525A;
+  width: 100%;
+  height: auto;
+}
+body section .mainBodyfirstDiv{
+background-color: #5FB6DB;
+width: 100%;
+height: 70rem;
+}
+body section .mainBodyfirstLeftDiv{
+background-color: #9DA5B4;
+width: 40%;
+height: 70rem;
+float: left;
+}
+body section .mainBodyfirstrightDiv{
+background-color: #B38293;
+width: 40%;
+height: 70rem;
+float: right;
+}
+body section .mainBodySecondDiv{
+
+}
+
+
+
 body footer .footerdiv {
   width: 80%;
   margin: 0 auto;
   color: #fff;
   font-size: 1.4rem;
-  height: 20rem;
+  height: 25rem;
   font-size: 1.4rem;
   list-style: none;
   margin-top: 9px;
@@ -35,6 +65,8 @@ body footer .footerdiv a {
   text-decoration: none;
   list-style: unset;
   color: white;
+  font-size: 1.7rem;
+padding: .3rem 1rem;
 
 }
 
@@ -50,6 +82,7 @@ body footer .footerdiv h4 {
   padding: 0;
   text-decoration: none;
   text-transform: uppercase;
+      font-size: 2rem;
 }
 
 body footer .footerdivone {
