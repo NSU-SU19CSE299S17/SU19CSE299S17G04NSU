@@ -19,36 +19,77 @@ header nav .pagemenu h1 {
   margin: 1rem 2rem 1rem 2rem;
 }
 
- body footer .footerdiv {
-  position: relative;
+body footer .footerdiv {
   width: 80%;
   margin: 0 auto;
   color: #fff;
   font-size: 1.4rem;
   height: 20rem;
+  font-size: 1.4rem;
+  list-style: none;
+  margin-top: 9px;
+}
+
+body footer .footerdiv a {
+  display: block;
+  text-decoration: none;
+  list-style: unset;
+  color: white;
+
+}
+
+body footer .footerdiv li {
+  display: block;
+  text-decoration: none;
+  list-style: unset;
+  padding-bottom: .5rem;
+  cursor: pointer;
+}
+
+body footer .footerdiv h4 {
+  padding: 0;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 body footer .footerdivone {
-  display: block;
+  display: inline-block;
   float: left;
-  width: 18%;
+  width: 15%;
+  padding-left: 8%;
 }
+
 body footer .footerdivtwo {
-  display: block;
+  display: inline-block;
   float: left;
-  width: 18%;
+  width: 15%;
+  padding-left: 8%;
 }
+
 body footer .footerdivthree {
-  display: block;
+  display: inline-block;
   float: left;
-  width: 18%;
+  width: 15%;
+  list-style: none;
+  padding-left: 8%;
 }
 
 body footer .footerdivfour {
   display: block;
   float: left;
-  width: 18%;
+  width: 15%;
+  list-style: none;
+  padding-left: 8%;
 }
+
 body footer .footerdivfive {
-  width: 18%;
+  width: 100%;
+  font-size: 2rem;
+  background-color: black;
+}
+
+body footer .footerdivfive p {
+  color: white;
+  text-align: center;
+  background-color: black;
 }
