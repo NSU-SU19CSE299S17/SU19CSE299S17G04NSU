@@ -1,3 +1,8 @@
+[![N|Solid](http://www.northsouth.edu/newassets/images/nsu-photo/logo-4.png)]()
+
+###  North South University
+###  Depertment of Eletrical & Computer Engineering
+
 # Project Name : NSUClubs
 
 
