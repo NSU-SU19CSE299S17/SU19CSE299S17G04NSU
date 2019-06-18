@@ -1,0 +1,13 @@
+https://medium.com/flexbox-and-grids/how-to-create-horizontally-scrollable-sections-with-flexbox-60d860f539b2     //event box
+https://codepen.io/grafreez/pen/yjLOjo?editors=1100    //event box
+https://mdbootstrap.com/snippets/jquery/ascensus/127174  //club links 
+
+
+
+https://codepen.io/anon/pen/KjgQPv?page=1  //login page
+https://codepen.io/tag/login/  login page
+
+
+https://codepen.io/sotlucas/pen/WmwJzR?page=5   //signup page
+
+

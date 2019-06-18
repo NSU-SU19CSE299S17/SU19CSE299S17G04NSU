@@ -1,0 +1,96 @@
+body {
+  font-family: 'Hammersmith One', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #F2F2F2;
+}
+.container {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 800px; width: 500px;
+  background: #FFF;
+  border-radius: 10px;
+  box-shadow: 0 15px 30px 0 rgba(0,0,0,0.11),
+              0 5px 15px 0 rgba(0,0,0,0.08);
+  text-align: center;
+  padding: 15px 0;
+}
+
+.container span {
+  display: inline-block;
+  padding: 10px 0;
+  font-size: 25px;
+}
+.container form {
+  padding: 0 35px;
+}
+.container input[type="text"],
+.container input[type="password"] {
+  font-family: 'Hammersmith One', sans-serif;
+  width: 100%;
+  padding: 10px 0;
+  margin-bottom: 20px;
+  border: none;
+  font-size: 14px;
+  border-bottom: 2px solid #9FB1BC;
+}
+.container input[type="text"]:focus,
+.container input[type="password"]:focus {
+  outline: none;
+  border-color: #3D348B;
+}
+.container form label {
+  display: block;
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 9px;
+  letter-spacing: 2px;
+  color: #9FB1BC;
+}
+
+.container input[type="button"] {
+  width: 100%;
+  font-family: 'Hammersmith One', sans-serif;
+  text-transform: uppercase;
+  margin-top: 10px;
+  padding: 10px;
+  border: 2px solid #3D348B;
+  border-radius: 5px;
+  background: #3D348B;
+  color: #FFF;
+  cursor: pointer;
+  transition: opacity .5s;
+}
+.container input[type="button"]:hover {
+  opacity: .8;
+}
+.container form a {
+  display: block;
+  margin-top: 10px;
+  text-align: right;
+  color: #9FB1BC;
+  font-size: 12px;
+}
+.container form a:hover {
+  color: #000;
+}
+
+/* EXTRA */
+#link {
+  position: absolute;
+  right: 0; left: 0;
+  bottom: 10px;
+  display: block;
+  font-family: 'Concert One', sans-serif;
+  text-align: center;
+  color: #000;
+  opacity: 0.3;
+}
+#link:hover {
+  opacity: 1;
+  text-decoration: none;
+}
