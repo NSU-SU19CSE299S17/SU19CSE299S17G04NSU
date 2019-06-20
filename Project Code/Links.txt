@@ -11,3 +11,9 @@ https://codepen.io/tag/login/  login page
 https://codepen.io/sotlucas/pen/WmwJzR?page=5   //signup page
 
 
+https://mdbootstrap.com/docs/jquery/modals/forms/  good idea about login and signup
+
+
+https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_scrollspy&stacked=h  //club page idea
+
+
