@@ -1,6 +1,9 @@
 https://medium.com/flexbox-and-grids/how-to-create-horizontally-scrollable-sections-with-flexbox-60d860f539b2     //event box
 https://codepen.io/grafreez/pen/yjLOjo?editors=1100    //event box
-https://mdbootstrap.com/snippets/jquery/ascensus/127174  //club links 
+https://mdbootstrap.com/snippets/jquery/ascensus/127174  //club links
+
+
+https://codepen.io/grafreez/pen/yjLOjo   //cards 
 
 
 
@@ -15,5 +18,11 @@ https://mdbootstrap.com/docs/jquery/modals/forms/  good idea about login and sig
 
 
 https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_scrollspy&stacked=h  //club page idea
+
+
+https://codepen.io/ncerminara/pen/Eqjgp/    //joining request button
+
+
+https://codepen.io/amanda89/pen/wbHtz?editors=1100    //contract us
 
 
