@@ -12,6 +12,10 @@ body {
   position: sticky;
 }
 
+.fixed-top {
+  position: absolute !important;
+}
+
 .profile-card-5 {
   margin-top: 20px;
 }
@@ -159,20 +163,6 @@ body {
   text-decoration: none;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .btn-yellow {
   background: #FAFF8C;
   color: #574500;
@@ -194,85 +184,61 @@ body {
   background: #20FF20;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  #contactForm {
-      margin: 0 auto;
+#contactForm {
+  margin: 0 auto;
 }
 
-  #contactForm input, textarea {
-      letter-spacing: 2px;
-      font: 200 1em/1.1em 'Helvetica Neue', sans-serif;
-
-      color: #000;
-      background-color: RGBA(204, 204, 204, .1);
-
-      outline: none;
-      border: .5px solid black;
-      display:block;
-      margin: 0 auto;
-      padding: 1em;
-      width: 90%;
-      max-width: 400px;
-
- }
+#contactForm input, textarea {
+  letter-spacing: 2px;
+  font: 200 1em/1.1em 'Helvetica Neue', sans-serif;
+  color: #000;
+  background-color: RGBA(204, 204, 204, .1);
+  outline: none;
+  border: .5px solid black;
+  display: block;
+  margin: 0 auto;
+  padding: 1em;
+  width: 90%;
+  max-width: 400px;
+}
 
 #contactForm textarea {
   height: 150px;
 }
 
 #contactForm *:focus {
-   background-color: RGBA(254, 191, 4, 1);
+  background-color: RGBA(254, 191, 4, 1);
 }
 
 #contactForm *:hover {
-   background-color: RGBA(254, 191, 4, 1);
+  background-color: RGBA(254, 191, 4, 1);
 }
 
 ::-webkit-input-placeholder {
-      color: #777;
+  color: #777;
 }
 
-:-moz-placeholder { /* Firefox 18- */
-      color: #777;
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: #777;
 }
 
-::-moz-placeholder {  /* Firefox 19+ */
-    color: #777;
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #777;
 }
 
 :-ms-input-placeholder {
-       color: #777;
+  color: #777;
 }
 
-
-
-
-
-
-
 /*FOOTER*/
-
 footer {
   background: #16222A;
   background: -webkit-linear-gradient(59deg, #3A6073, #16222A);
   background: linear-gradient(59deg, #3A6073, #16222A);
   color: white;
-  margin-top:100px;
+  margin-top: 100px;
 }
 
 footer a {
@@ -297,11 +263,8 @@ footer a:hover {
   color: white;
 }
 
-
 /*SOCİAL İCONS*/
-
 /* footer social icons */
-
 ul.social-network {
   list-style: none;
   display: inline;
@@ -377,17 +340,6 @@ ul.social-network li {
 .social-network a {
   background-color: #F9F9F9;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 #section7 {
   background-color: rgb(239, 239, 239);
