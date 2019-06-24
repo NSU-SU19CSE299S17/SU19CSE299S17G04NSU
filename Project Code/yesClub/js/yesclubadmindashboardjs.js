@@ -28,7 +28,7 @@ $("#daw01").click(function () {
 });
 
 $("#daw02").click(function () {
-    $("#aw032").css("display", "none");
+    $("#aw02").css("display", "none");
 });
 
 $("#daw03").click(function () {
@@ -85,4 +85,12 @@ $("#daw15").click(function () {
 
 $("#daw16").click(function () {
     $("#aw16").css("display", "none");
+});
+
+$("#daw17").click(function () {
+    $("#aw17").css("display", "none");
+});
+
+$("#daw18").click(function () {
+    $("#aw18").css("display", "none");
 });
