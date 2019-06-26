@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- FILE: HEADER 1 -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600|Oswald" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css" media="screen,projection" />
+  <link type="text/css" rel="stylesheet" href="https://www.torrentbd.net/torrent/themes/material/theme.css" media="screen,projection" />
+  <!--Let browser know website is optimized for mobile-->
+  <link rel="apple-touch-icon" sizes="180x180" href="https://www.torrentbd.net/torrent/themes/material/static/favicon/apple-touch-icon.png">
+  <!-- <link rel="icon" type="image/png" sizes="32x32" href="https://www.torrentbd.net/torrent/themes/material/static/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://www.torrentbd.net/torrent/themes/material/static/favicon/favicon-16x16.png"> -->
+  <link rel="manifest" href="https://www.torrentbd.net/torrent/themes/material/static/favicon/site.webmanifest">
+
+
+  <script type="text/javascript" src="https://www.torrentbd.net/torrent/themes/material/jquery-2.1.1.min.js"></script>
+
+  <script src="https://www.torrentbd.net/torrent/themes/material/jquery.cookie.js"></script>
+  <script type="text/javascript" src="https://www.torrentbd.net/torrent/themes/material/code264.js"></script>
+
+
+  <link type="text/css" rel="stylesheet" href="https://www.torrentbd.net/torrent/themes/material/scheme_01_009.css" media="screen,projection" />
+
+  <link type="text/css" rel="stylesheet" href="https://www.torrentbd.net/torrent/themes/material/inhouse_007.css" media="screen,projection" />
+
+  <link type="text/css" rel="stylesheet" href="https://www.torrentbd.net/torrent/themes/immutables.css" media="screen,projection" />
+
+  <style>
+    .inline-block {
+      display: inline-block;
+    }
+
+    .personal-links h6 {
+      font-size: 1.05em;
+      margin: 10px auto;
+    }
+
+    .personal-links-ul li {
+      list-style-type: none;
+      padding: 5px 4px;
+      display: inline-block;
+      font-size: .9em;
+    }
+
+    .personal-links-ul li a:hover {
+      font-weight: normal;
+      text-decoration: underline;
+    }
+
+    @media only screen and (max-width: 1400px) {
+      nav ul a {
+        padding: 0 10px;
+      }
+    }
+
+    .side-nav li:hover,
+    .side-nav li:active {
+      background: #006064;
+      color: whitesmoke;
+    }
+
+    .side-nav li:hover>a {
+      color: whitesmoke !important;
+    }
+
+    .sidenav-btn i {
+      font-size: 20px !important;
+    }
+  </style>
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $(".button-collapse").sideNav();
+      $('.modal-trigger').leanModal({
+        dismissible: true, // Modal can be dismissed by clicking outside of the modal
+        opacity: .8, // Opacity of modal background
+        in_duration: 300, // Transition in duration
+        out_duration: 200, // Transition out duration
+      });
+      $('.datepicker').pickadate({
+        selectMonths: true, // Creates a dropdown to control month
+        selectYears: 15, // Creates a dropdown of 15 years to control year
+        format: 'yyyy-mm-dd'
+      });
+      $('.materialboxed').materialbox();
+      $('select').material_select();
+      $('.option').material_select();
+    });
+  </script>
+  <title>NSUClub: Donation</title>
+
+
+  <!-- Global Site Tag (gtag.js) - Google Analytics -->
+  <!--
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-45626362-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-45626362-2');
+    </script>
+    -->
+
+</head>
+
+
+<body>
+  <header>
+    <!-- Modal Structure -->
+
+
+
+
+
+
+
+
+
+
+  </header>
+
+
+
+  <main>
+
+    <div class=" container">
+
+      <!-- middle block -->
+      <div class="col l9 m12 s12" style="margin-top:6px">
+
+
+
+        <style>
+          .tabs .tab a {
+            font-size: 13pt;
+          }
+
+          .amount {
+            font-weight: 300;
+          }
+
+          .fac-list {
+            padding: 15px;
+          }
+
+          .fac-list li {
+            list-style-type: square;
+          }
+
+          .gateway {
+            min-height: 300px;
+          }
+
+          .credentials {
+            font-weight: 300;
+            font-size: 15pt;
+          }
+
+          .bankField,
+          .rocketField,
+          .paypalField {
+            display: none;
+          }
+
+          .bonus {
+            font-style: italic;
+            font-weight: 600;
+            color: #ffab40;
+            margin-right: 4px;
+            display: none;
+          }
+
+          .bonus-ln {
+            font-weight: normal;
+          }
+
+          .donation-card,
+          .donation-row .card-panel {
+            padding: 18px 20px;
+          }
+
+          .donation-card {
+            background: #546e7a;
+          }
+
+          .donation-card li {
+            background: inherit;
+          }
+
+          .donation-gateway {
+            min-height: 300px;
+          }
+
+          .donation-form-panel {
+            background: #eceff1;
+          }
+        </style>
+
+        <!-- <div class="teal darken-3" style="color: white; padding: 7px 25px;"><h5>Donation</h5></div> -->
+
+        <div class="row">
+          <div class="col s12 content-title">
+            <h3 style="text-align:center;">Payment Mathod</h3>
+          </div>
+        </div>
+
+        <div class="row donation-row cbg">
+
+          <div style="margin-bottom:35px" class="col s12">
+            <ul class="tabs">
+              <li class="tab col s12 m12"><a href="#facilities">Facilities</a></li>
+              <li class="tab col s12 m12"><a href="#procedure">Methods</a></li>
+              <li class="tab col s12 m12"><a href="#form">Form</a></li>
+              <li class="tab col s12 m12"><a href="#faq">FAQ</a></li>
+            </ul>
+          </div>
+
+          <!-- #faciilities -->
+          <div id="facilities" class="col s12" style="float: none;margin: 0 auto;">
+            <div class="row">
+
+              <div class="col s12 m6 l6">
+                <div class="card-panel donation-card">
+                  <h5 class="amount">৳ 200.00</h5>
+                  <ul class="fac-list">
+                    <li>80 GB <span class="bonus">x2</span> Upload Raise.</li>
+                    <li>2 <span class="bonus">x2</span> Invites.</li>
+                    <li>15
+                      <!-- <span class="bonus">x2</span> --> H&amp;R Coupons.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col s12 m6 l6">
+                <div class="card-panel donation-card">
+                  <h5 class="amount">৳ 300.00</h5>
+                  <ul class="fac-list">
+                    <li>150 GB <span class="bonus">x2</span> Upload Raise.</li>
+                    <li>3 <span class="bonus">x2</span> Invites.</li>
+                    <li>25
+                      <!-- <span class="bonus">x2</span> --> H&amp;R Coupons.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col s12 m6 l6">
+                <div class="card-panel donation-card">
+                  <h5 class="amount">৳ 500.00</h5>
+                  <ul class="fac-list">
+                    <li>300 GB <span class="bonus">x2</span> Upload Raise.</li>
+                    <li>6 <span class="bonus">x2</span> Invites.</li>
+                    <li><a href="user-classes.php#vip" target="_blank"><span class="tbdrank vip">VIP</span></a> Rank for 6 months.</li>
+                    <li>60 <span class="bonus">x2</span> H&amp;R Coupons.</li>
+                    <li>Immune to Ratio Warnings.</li>
+                    <li style="list-style-type: none;">&nbsp;</li>
+                    <!-- <li style="list-style-type: none;">&nbsp;</li> -->
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col s12 m6 l6">
+                <div class="card-panel donation-card">
+                  <h5 class="amount">৳ 1000.00</h5>
+                  <ul class="fac-list">
+                    <li class="bonus"><span class="bonus bonus-ln">6 Months FreeLeech (Unlimited Download).</span></li>
+                    <li>700 GB Upload Raise.</li>
+                    <li><a href="user-classes.php#vip" target="_blank"><span class="tbdrank vip">VIP</span></a> Rank for 1 Year.</li>
+                    <li>5 <span class="bonus">x2</span> Invites (Per Month).</li>
+                    <li>15 <span class="bonus">x2</span> H&amp;R Coupons (Per Month).</li>
+                    <li>Contributor Badge.</li>
+                    <li>Immune to Ratio Warnings.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col s12 m6 l6">
+                <div class="card-panel donation-card">
+                  <h5 class="amount">৳ 2000.00</h5>
+                  <ul class="fac-list">
+                    <li>1 <span class="bonus">+ 1</span> Year FreeLeech (Unlimited Download).</li>
+                    <li>300 GB <span class="bonus">x2</span> Upload Raise.</li>
+                    <li><a href="user-classes.php#vip" target="_blank"><span class="tbdrank vip">VIP</span></a> Rank for 2 Years.</li>
+                    <li>9 <span class="bonus">x2</span> Invites (Per Month).</li>
+                    <li>25 <span class="bonus">x2</span> H&amp;R Coupons (Per Month).</li>
+                    <li>Contributor Badge.</li>
+                    <li>Immune to Ratio Warnings.</li>
+                  </ul>
+
+                </div>
+              </div>
+
+              <div class="col s12 m6 l6">
+                <div class="card-panel donation-card">
+                  <h5 class="amount">৳ 3000.00</h5>
+                  <ul class="fac-list">
+                    <li>2 <span class="bonus">+ 1</span> Years FreeLeech (Unlimited Download).</li>
+                    <li>500 GB <span class="bonus">x2</span> Upload Raise.</li>
+                    <li><a href="user-classes.php#vip" target="_blank"><span class="tbdrank vip">VIP</span></a> Rank for 3 Years.</li>
+                    <li>12 <span class="bonus">x2</span> Invites (Per Month).</li>
+                    <li>40 <span class="bonus">x2</span> H&amp;R Coupons (Per Month).</li>
+                    <li>Contributor Badge.</li>
+
+                    <li>Immune to Ratio Warnings.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col s12 m6 l6">
+                <div class="card-panel donation-card">
+                  <h5 class="amount">৳ 4000.00</h5>
+                  <ul class="fac-list">
+                    <li>3 <span class="bonus">+ 1</span> Years FreeLeech (Unlimited Download).</li>
+                    <li>1024 GB <span class="bonus">x2</span> Upload Raise.</li>
+                    <li><a href="user-classes.php#mvp" target="_blank"><span class="tbdrank mvp">MVP</span></a> Rank for 3 <span class="bonus">+ 1</span> Years.</li>
+                    <li>2x Upload</li>
+
+                    <li>20 <span class="bonus">x2</span> Invites (Per Month).</li>
+                    <li>Immune to H&amp;R System.</li>
+                    <li>Contributor Badge.</li>
+
+                    <li>Priority Support.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col s12 m6 l6">
+                <div class="card-panel donation-card">
+                  <h5 class="amount">৳ 5000.00</h5>
+                  <ul class="fac-list">
+                    <li>4 <span class="bonus">+ 1</span> Years FreeLeech (Unlimited Download).</li>
+                    <li>1024 GB <span class="bonus">x2</span> Upload Raise.</li>
+                    <li><a href="user-classes.php#mvp" target="_blank"><span class="tbdrank mvp">MVP</span></a> Rank for 4 <span class="bonus">+ 1</span> Years.</li>
+                    <li>2x Upload</li>
+                    <li>25 <span class="bonus">x2</span> Invites (Per Month).</li>
+                    <li>Immune to H&amp;R System.</li>
+                    <li>Contributor Badge.</li>
+
+                    <li>Priority Support.</li>
+                  </ul>
+                </div>
+              </div>
+
+            </div>
+          </div> <!-- #facilities -->
+
+          <!-- #procedure -->
+          <div id="procedure" class="col s12">
+            <div class="row">
+              <div class="col s12 m6 l6">
+                <div class="donation-gateway card-panel" style="text-align:center">
+                  <img class="responsive-img tooltipped" src="https://www.torrentbd.net/torrent/donation/img/logo/logo-bkash.png" data-position="right" data-delay="50" data-tooltip="bKash"> <br><br><br>
+                  <p class="credentials">
+                    bKash Account (Personal): <br>
+                    01675708783
+                  </p>
+                </div>
+              </div>
+
+              <div class="col s12 m6 l6">
+                <div class="donation-gateway card-panel" style="text-align:center">
+                  <img style="max-width: 200px" class="responsive-img tooltipped" src="https://www.torrentbd.net/torrent/donation/img/logo/logo-rocket-1.jpeg" data-position="right" data-delay="50" data-tooltip="ROCKET (Dutch Bangla Mobile Banking)">
+                  <br><br><br>
+
+                  <p class="credentials">
+                    DBBL Mobile Banking Account: <br>
+                    016757087835
+                    <!-- <i style="font-size: .75em;">Temporarily Unavailable</i> -->
+                  </p>
+                </div>
+              </div>
+
+              <div class="col s12 m6 l6">
+                <div class="donation-gateway card-panel" style="text-align:center">
+                  <img class="responsive-img tooltipped" src="https://assetsds.cdnedge.bluemix.net/sites/default/files/styles/big_2/public/feature/images/united_commercial_bank.jpg?itok=AuasI77g" data-position="right" data-delay="50" data-tooltip="The UCB Bank Limited" style="margin-left:25px; height:100px;">
+                  <img style="max-width: 150px" class="responsive-img tooltipped" src="http://abbl.com/wp-content/uploads/2015/04/rebranding-img-new.png" data-position="right" data-delay="50" data-tooltip="AB Bank Limited" style=" height:100px;>
+                  <p class="credentials" style="margin-top: 50px;">
+                    <br><br>
+                    Please contact <a href="support.php">Support</a> for Bank Account details
+                  </p>
+                </div>
+              </div>
+
+              <div class="col s12 m6 l6">
+                <div class="donation-gateway card-panel" style="text-align:center">
+                  <img style="max-width: 160px" class="responsive-img tooltipped" src="https://www.torrentbd.net/torrent/donation/img/logo-paypal.png" data-position="right" data-delay="50" data-tooltip="PayPal"> <br><br><br><br>
+
+                  <p class="credentials">
+                    Please contact <a href="support.php">Support</a> for PayPal Account details
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div> <!-- #procedure -->
+
+          <!-- #form -->
+          <div id="form" class="col s12">
+            <div class="row">
+              <div class="col s12 m8 l7" style="float: none;margin: 0 auto;">
+                <div class="card-panel donation-form-panel">
+                  <form action="take-donation.php" method="POST">
+                    <div class="card-content">
+                      <div class="row">
+                        <h5 class="col s12 center" style="font-weight:300; color:#009688; padding-bottom:10px">Hi mdmarufbillah! Please submit this form after donation:</h5> <br><br>
+                        <div class="input-field col s12">
+                          <label for="date">Date of Donation</label>
+                          <input id="date" name="date" type="date" class="datepicker" required="required">
+                        </div>
+                        <div class="input-field col m9 s8">
+                          <input id="amount" name="amount" type="text" class="validate" required="required">
+                          <label for="amount">Amount</label>
+                        </div>
+                        <div class="input-field col m3 s4">
+                          <select name="currency">
+                            <option value="BDT" selected>BDT</option>
+                            <option value="USD">USD</option>
+                            <option value="EUR">EUR</option>
+                            <option value="GBP">GBP</option>
+                            <option value="CAD">CAD</option>
+                            <option value="AUD">AUD</option>
+                          </select>
+                        </div>
+                        <div class="col s12">
+                          <br>
+                          <h6>Donation Method:</h6>
+                          <p>
+                            <input class="method" name="method" type="radio" id="bkash" value="bkash" checked="checked" />
+                            <label for="bkash">bKash</label>
+                          </p>
+                          <p>
+                            <input class="method" name="method" type="radio" id="rocket" value="rocket" />
+                            <label for="rocket">ROCKET</label>
+                          </p>
+                          <p>
+                            <input class="method" name="method" type="radio" id="bank" value="bank" />
+                            <label for="bank">Bank Deposit</label>
+                          </p>
+                          <p>
+                            <input class="method" name="method" type="radio" id="paypal" value="paypal" />
+                            <label for="paypal">PayPal</label>
+                          </p>
+                          <br>
+                        </div>
+
+                        <div class="input-field col s12 bkashField">
+                          <input id="trxid" name="trxid" type="text" class="validate">
+                          <label for="trxid">TrxID (Transaction ID)</label>
+                        </div>
+                        <div class="input-field col s12 bkashField">
+                          <input id="agent_number" name="agent_number" type="text" class="validate">
+                          <label for="agent_number">Agent Number / bKash Number</label>
+                        </div>
+
+                        <div class="input-field col s12 rocketField">
+                          <input id="txnid" name="txnid" type="text" class="validate">
+                          <label for="txnid">TxnId (Transaction ID)</label>
+                        </div>
+                        <div class="input-field col s12 rocketField">
+                          <input id="rocket_number" name="rocket_number" type="text" class="validate">
+                          <label for="rocket_number">Agent Number / ROCKET Account Number</label>
+                        </div>
+
+                        <div class="input-field col s12 bankField">
+                          <h6>Bank:</h6>
+                          <p>
+                            <input class="method" name="bank_name" type="radio" id="cbl" value="CBL" checked="checked" />
+                            <label for="cbl">UCB Bank</label>
+                          </p>
+                          <p>
+                            <input class="method" name="bank_name" type="radio" id="scb" value="SCB" />
+                            <label for="scb">AB bank</label>
+                          </p>
+                          <p>
+                            <input class="method" name="bank_name" type="radio" id="dbbl" value="DBBL" />
+                            <label for="dbbl">Dutch Bangla Bank</label>
+                          </p>
+                          <br>
+                        </div>
+                        <div class="input-field col s12 bankField">
+                          <input id="depositor" name="depositor" type="text" class="validate">
+                          <label for="depositor">Depositor Name</label>
+                        </div>
+                        <div class="input-field col s12 bankField">
+                          <input id="bank_account_number" name="bank_account_number" type="text" class="validate">
+                          <label for="bank_account_number">Account Number (Applicable for online transfer)</label>
+                        </div>
+
+                        <div class="input-field col s12 paypalfield">
+                          <input id="pp_account" name="pp_account" type="email" class="validate">
+                          <label for="pp_account">PayPal Account</label>
+                        </div>
+                        <div class="input-field col s12 paypalfield">
+                          <input id="pp_transaction_id" name="pp_transaction_id" type="text" class="validate">
+                          <label for="pp_transaction_id">PayPal Transaction ID</label>
+                        </div>
+
+                        <div class="input-field col s12">
+                          <input id="phone" name="phone" type="text" class="validate">
+                          <label for="phone">Contact Number (Optional)</label>
+                        </div>
+                        <div class="input-field col s12">
+                          <textarea id="further_info" name="further_info" class="materialize-textarea"></textarea>
+                          <label for="further_info">Further Info (Optional)</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-action">
+                      <div class="row">
+                        <div class="col m6" style="padding-top:20px">
+                          <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+                            <i class="material-icons right">send</i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div> <!-- #form -->
+
+          <!-- #faq -->
+          <div id="faq" class="col s12">
+            <ul class="collapsible popout" data-collapsible="accordion">
+              <li>
+                <div class="collapsible-header">Why donate?</div>
+                <div class="collapsible-body flow-text">
+                  <p>TorrentBD runs on Dedicated Servers. The server and maintenance costs are huge. Yet we strive to keep the site free of ads for a better user experience. Hence, we anticipate contributions from our users to help us keep this
+                    community alive maintaining its quality services.
+                    So if you can afford to, please consider a donation. Be a part of our progress.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="collapsible-header">I want to donate? What to do?</div>
+                <div class="collapsible-body flow-text">
+                  <p>We accept donations via bKash, ROCKET, Bank deposits and PayPal. Please click on the "<a href="donate.php#procedure" target="_blank">Methods</a>" tab for details. Choose the method more convenient to you. After donating you have
+                    to fill in the "<a href="donate.php#form" target="_blank">Donation Form</a>" with required information and submit it. You will receive a confirmation PM once the donation is verified.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="collapsible-header">How long does it take to update my account?</div>
+                <div class="collapsible-body flow-text">
+                  <p>Account is updated within 12 hours of form submission. Once your account is updated, you will be notified via a confirmation PM. However, if for some reason you do not receive any confirmation PM within 12 hours, please submit a
+                    <a href="support.php" target="_blank">Support ticket</a>.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="collapsible-header">What are the TrxID, Agent / Account Number for bKash?</div>
+                <div class="collapsible-body flow-text">
+                  <p>
+                    <b>TrxID:</b> Every bKash transaction has a Unique ID which is called TrxID. bKash provides the TrxID to both sender and receiver through an sms immediately after a transaction. It helps in identifying or verifying the
+                    transaction. <br><br>
+                    <b>Agent Number / bKash Number:</b> The number from which the money is sent. If TrxID cannot be provided for some reason, the agent number can be used for verification.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="collapsible-header">What are the TxnId, Agent / Account Number for ROCKET?</div>
+                <div class="collapsible-body flow-text">
+                  <p>
+                    <b>TxnId:</b> Similar to TrxID for bKash. See the aforementioned answer.<br><br>
+                    <b>Agent Number / ROCKET Account Number:</b> Similar to Agent / bKash Number. See the aforementioned answer.
+                  </p>
+                </div>
+              </li>
+            </ul>
+
+            <ul class="collapsible popout" data-collapsible="accordion">
+              <li>
+                <div class="collapsible-header">What are "H&amp;R Coupons"?</div>
+                <div class="collapsible-body flow-text">
+                  <p>
+                    H&amp;R Coupons can be used to clear H&amp;R flags. To know about H&amp;R system please <a href="faq.php?id=103" target="_blank">follow this topic</a>.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="collapsible-header">What does "Immune to Ratio Warnings" mean?</div>
+                <div class="collapsible-body flow-text">
+                  <p>
+                    It means the donor will not be warned/restricted for low ratio as long as he holds VIP rank.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="collapsible-header">What does "2x Upload" mean?</div>
+                <div class="collapsible-body flow-text">
+                  <p>
+                    Whatever amount of data the donor uploads, will be doubled. So if he uploads 10 GB while seeding some torrents, it will be counted as 20 GB. <br>Paired with FreeLeech, 2x Upload can help immensely to build up handsome profile
+                    statistics and ratio.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div> <!-- #faq -->
+
+        </div> <!-- main row -->
+
+        <script>
+          $(document).ready(function() {
+
+            $(".bankField").hide();
+            $(".rocketField").hide();
+            $(".paypalfield").hide();
+
+            document.getElementById('bank').onchange = function() {
+              $(".bkashField").hide();
+              $(".rocketField").hide();
+              $(".paypalfield").hide();
+              $(".bankField").show();
+            }
+            document.getElementById('bkash').onchange = function() {
+              $(".bankField").hide();
+              $(".rocketField").hide();
+              $(".paypalfield").hide();
+              $(".bkashField").show();
+            }
+            document.getElementById('rocket').onchange = function() {
+              $(".bankField").hide();
+              $(".bkashField").hide();
+              $(".paypalfield").hide();
+              $(".rocketField").show();
+            }
+            document.getElementById('paypal').onchange = function() {
+              $(".bankField").hide();
+              $(".bkashField").hide();
+              $(".rocketField").hide();
+              $(".paypalfield").show();
+            }
+          }); //ready
+        </script>
+
+      </div> <!-- middle block -->
+    </div> <!-- .row ends -->
+  </main>
+
+
+
+
+
+
+
+
+
+
+  <footer class="page-footer blue-grey darken-2" style="padding-top:0px">
+    <div class="footer-copyright">
+      <div class="container">
+        © CSE299S17G04NSU | by mdmarufbillah
+        <a class="grey-text text-lighten-4 right">Served in 0 secs</a> </div>
+    </div>
+  </footer>
+
+  <script type="text/javascript" src="https://www.torrentbd.net/torrent/themes/material/marquee.js"></script>
+
+  <script>
+    function init() {
+      var imgDefer = document.getElementsByTagName('img');
+      for (var i = 0; i < imgDefer.length; i++) {
+        if (imgDefer[i].getAttribute('data-src')) {
+          imgDefer[i].setAttribute('src', imgDefer[i].getAttribute('data-src'));
+        }
+      }
+    }
+
+    $(window).load(function() {
+
+      init();
+
+
+    });
+  </script>
+  <!-- FILE: FOOTER 1 -->
+</body>
+
+</html>
