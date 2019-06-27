@@ -1,3 +1,16 @@
+/* navbar */
+
+
+
+
+
+
+
+
+
+
+
+
 .row {
   overflow-x: auto;
   position: sticky;
@@ -48,6 +61,120 @@ a.remImage img {
 
 
 
+
+
+.test01{
+
+}
+
+.test01:hover a.remImage img {
+    opacity: 1;
+    z-index: 99;
+    position: absolute;
+    top: 5px;
+}
+
+.test01:after {
+    content: '';
+    /* width: 100px;
+    height: 100px; */
+    position: absolute;
+    display: block;
+    background: rgba(0, 0, 0, 0.6);
+    top: 0px;
+    z-index: 0;
+    opacity: 0;
+    transition: all .5s ease-in-out;
+}
+.test01:hover:after{
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+.test02{
+
+}
+
+.test02:hover a.remImage img {
+    opacity: 1;
+    z-index: 99;
+    position: absolute;
+    top: 5px;
+}
+
+.test02:after {
+    content: '';
+    /* width: 100px;
+    height: 100px; */
+    position: absolute;
+    display: block;
+    background: rgba(0, 0, 0, 0.6);
+    top: 0px;
+    z-index: 0;
+    opacity: 0;
+    transition: all .5s ease-in-out;
+}
+.test02:hover:after{
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+.test03{
+
+}
+
+.test03:hover a.remImage img {
+    opacity: 1;
+    z-index: 99;
+    position: absolute;
+    top: 5px;
+}
+
+.test03:after {
+    content: '';
+    /* width: 100px;
+    height: 100px; */
+    position: absolute;
+    display: block;
+    background: rgba(0, 0, 0, 0.6);
+    top: 0px;
+    z-index: 0;
+    opacity: 0;
+    transition: all .5s ease-in-out;
+}
+.test03:hover:after{
+    opacity: 1;
+}
+
+
+
+
+
+
+
+.btn{
+
+}
+
+
+.btn-primary{
+  padding: 15px 60px;
+    border-radius: 10px;
+    margin: auto;
+}
 
 
 

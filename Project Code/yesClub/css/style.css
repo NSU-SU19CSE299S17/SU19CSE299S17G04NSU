@@ -251,6 +251,15 @@ body {
   color: #777;
 }
 
+
+
+
+
+
+
+
+
+
 /*FOOTER*/
 footer {
   background: #16222A;
@@ -282,6 +291,15 @@ footer a:hover {
   color: white;
 }
 
+
+
+
+
+
+
+
+
+
 /*SOCİAL İCONS*/
 /* footer social icons */
 ul.social-network {
@@ -295,6 +313,13 @@ ul.social-network li {
   display: inline;
   margin: 0 5px;
 }
+
+
+
+
+
+
+
 
 /* footer social icons */
 .social-network a.icoFacebook:hover {
@@ -359,6 +384,11 @@ ul.social-network li {
 .social-network a {
   background-color: #F9F9F9;
 }
+
+
+
+
+
 
 #section7 {
   background-color: rgb(239, 239, 239);

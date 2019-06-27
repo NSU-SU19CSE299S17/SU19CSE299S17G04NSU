@@ -1,3 +1,10 @@
+// navbar
+
+
+
+
+
+//top emage delete section
 $("#delete1").click(function () {
     $("#test1").css("display", "none");
 });
@@ -93,4 +100,78 @@ $("#daw17").click(function () {
 
 $("#daw18").click(function () {
     $("#aw18").css("display", "none");
+});
+
+
+
+
+
+
+
+
+// edit events update section
+//delete event on  event update section
+$("#eued01").click(function () {
+    $("#eue01").css("display", "none");
+});
+
+$("#eued02").click(function () {
+    $("#eue02").css("display", "none");
+});
+
+$("#eued03").click(function () {
+    $("#eue03").css("display", "none");
+});
+
+$("#eued04").click(function () {
+    $("#eue04").css("display", "none");
+});
+
+$("#eued05").click(function () {
+    $("#eue05").css("display", "none");
+});
+
+$("#eued06").click(function () {
+    $("#eue06").css("display", "none");
+});
+
+$("#eued07").click(function () {
+    $("#eue07").css("display", "none");
+});
+
+$("#eued08").click(function () {
+    $("#eue08").css("display", "none");
+});
+
+$("#eued09").click(function () {
+    $("#eue09").css("display", "none");
+});
+
+
+
+
+
+
+
+
+// edit members update section
+//delete a member on member update section
+$("#momsd01").click(function () {
+    $("#moms01").css("display", "none");
+});
+
+$("#momsd02").click(function () {
+    $("#moms02").css("display", "none");
+});
+
+$("#momsd03").click(function () {
+    $("#moms03").css("display", "none");
+});
+
+$("#momsd04").click(function () {
+    $("#moms04").css("display", "none");
+});
+
+$("#momsd05").click(function () {
+    $("#moms05").css("display", "none");
 });
