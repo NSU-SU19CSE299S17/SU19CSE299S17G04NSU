@@ -7,231 +7,167 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title></title>
 
-  <style>
-    body {
-      background: #DAE3E7;
-      font-family: "Roboto", sans-serif
-    }
-
-    img {
-      max-width: 100%
-    }
-
-    .row {
-      margin-top: 40px;
-    }
-
-    .card {
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 3px 10px 0 rgba(0, 0, 0, 0.1);
-    }
-
-    .header {
-      padding: 10px 0;
-      background: #f5f5f5;
-      border-top: 3px solid #3AAA64;
-    }
-
-    .button-email {
-      margin: 10px 0
-    }
-
-    h5,
-    .fa-circle {
-      color: #3AAA64
-    }
-
-    .list-group {
-      list-style: disc inside;
-
-    }
-
-    .list-group-item {
-      display: list-item;
-    }
-
-    .find-more {
-      text-align: right;
-    }
-
-
-    .label-theme {
-      background: #3AAA64;
-      font-size: 14px;
-      padding: .3em .7em .3em;
-      color: #fff;
-      border-radius: .25em;
-    }
-
-    .label a {
-      color: inherit;
-    }
-  </style>
-
-  <link rel="stylesheet" href="https://rds3.northsouth.edu/assets/css/chosen.min.css" />
-  <link rel="stylesheet" href="https://rds3.northsouth.edu/assets/css/jquery.dataTables.min.css" />
-  <link rel="stylesheet" href="https://rds3.northsouth.edu/assets/css/main.css" />
-
-
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+  <link rel="stylesheet" href="css\userprofilestyle.css">
 </head>
 
 <body>
 
 
 
-
-  <header class="header">
-    <div class="container">
-      <div class="teacher-name">
-        <div class="row">
-          <div class="col-sm-9">
-            <h2><strong>Rick Sanchez</strong></h2>
+  <div class="container emp-profile">
+    <form method="post">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="profile-img">
+            <img
+              src="https://scontent.fdac19-1.fna.fbcdn.net/v/t1.0-9/45249920_1950714085004866_4597105429091188736_n.jpg?_nc_cat=108&_nc_oc=AQnLTmhFUa9p3yHnCmj9lhBhHiE6cB03ASK02_HuKCZ1G48MI1ZE4g4wI7mKMuzSdj0&_nc_ht=scontent.fdac19-1.fna&oh=91e0bb31409b9b5e8ebdda5a0ad37060&oe=5D78A02B"
+              class="rounded-circle" alt="" />
+            <div class="file btn btn-lg btn-primary">
+              Change Photo
+              <input type="file" name="file" />
+            </div>
           </div>
-          <div class="col-sm-3">
-            <div class="button pull-right">
-              <a href="#" class="btn btn-outline-success btn-sm">Edit Profile <i class="fa fa-pencil"></i></a>
+        </div>
+        <div class="col-md-6">
+          <div class="profile-head">
+            <h5>
+              MD Maruf Billah
+            </h5>
+            <h6>
+              Member at <a>NSU Ethics Club</a>
+            </h6>
+            <!-- <p class="proile-rating">RANKINGS : <span>8/10</span></p> -->
+            <br><br><br>
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Club Informations</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <input type="submit" class="profile-edit-btn" name="btnAddMore" value="Edit Profile" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="profile-work">
+            <h3>WORK LINK</h3>
+            <a href="">Facebook Id</a><br />
+            <a href="">Send Email</a><br />
+            <a href="">piazza Profile</a><br><br>
+            <h2>In Club</h3>
+              <a href="">ECE Club</a><br />
+              <a href="">Ethics Club</a><br />
+              <a href="">YEF Club</a><br />
+          </div>
+        </div>
+        <div class="col-md-8">
+          <div class="tab-content profile-tab" id="myTabContent">
+            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+              <div class="row">
+                <div class="col-md-6">
+                  <label>NSU ID:</label>
+                </div>
+                <div class="col-md-6">
+                  <p>1530671042</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <label>Name</label>
+                </div>
+                <div class="col-md-6">
+                  <p>MD Maruf Billah</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <label>Email</label>
+                </div>
+                <div class="col-md-6">
+                  <p>maruf.billah@northsouth.edu</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <label>Phone</label>
+                </div>
+                <div class="col-md-6">
+                  <p>+8801675708783</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <label>Depertment</label>
+                </div>
+                <div class="col-md-6">
+                  <p>ECE</p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <label>DOB</label>
+              </div>
+              <div class="col-md-6">
+                <p>05-Oct-19XX</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <label>Gender</label>
+              </div>
+              <div class="col-md-6">
+                <p>Male</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <label>Address</label>
+              </div>
+              <div class="col-md-6">
+                <p>House 500/1, lichubagan scioty, Mogbazar, Dhaka</p>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+              <div class="row">
+                <div class="col-md-6">
+                  <label>English Level</label>
+                </div>
+                <div class="col-md-6">
+                  <p>Expert</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <label>Availability</label>
+                </div>
+                <div class="col-md-6">
+                  <p>6 months</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <label>Your Bio</label><br />
+                  <p>Your detail description</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-
-      <div class="row" style="margin-top:20px;">
-        <div class="col-sm-3">
-          <a href="#"> <img class="rounded-circle" src="//images.weserv.nl/?url=i.imgur.com/Md9jS0Ib.jpg" alt="Rick"></a>
-        </div>
-
-        <div class="col-sm-6">
-          <h5Associate Professor, <small>Dept. of Alien Agriculture, Jaarvlar-3 University</small></h5>
-            <p>PhD on Molecular Shwanky Physics</p>
-            <p>Address: 123 Cuba str Tampa, Fl, Earth 137</p>
-        </div>
-
-        <div class="col-sm-3 text-center social">
-          <span class="number">Phone:<strong>+0001732226402</strong></span>
-          <div class="button-email">
-            <a href="mailto:arick@yahoo.com" class="btn btn-outline-success btn-block"><i class="fa fa-envelope-o"></i> Send Email</a>
-          </div>
-          <div class="social-icons">
-            <a href="#">
-              <span class="fa-stack">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-              </span></a>
-            <a href="#">
-              <span class="fa-stack">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-google-plus fa-stack-1x fa-inverse"></i>
-              </span></a>
-            <a href="#">
-              <span class="fa-stack">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-              </span></a>
-            <a href="#">
-              <span class="fa-stack">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-slideshare fa-stack-1x fa-inverse"></i>
-              </span></a>
-
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
-  <div class="container">
-
-
+    </form>
   </div>
 
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
 
-
-
-  <div class="tab-content no-border padding-24">
-    <div id="home" class="tab-pane in active">
-      <div class="row">
-        <div class="col-xs-12 col-sm-2 center">
-          <span class="profile-picture">
-            <img id="avatar" class="editable img-responsive" alt="Avatar" src="https://rds3.northsouth.edu/assets/images/avatars/profile-pic.jpg" width="160" />
-          </span>
-
-          <div class="space space-4"></div>
-          <div class="profile-contact-links align-left">
-            <a href="#" class="btn btn-link">
-              <i class="ace-icon fa fa-cog bigger-120 green"></i>
-              1530671042 </a>
-          </div>
-
-        </div>
-
-
-        <div class="col-xs-12 col-sm-5">
-
-
-          <div class="profile-user-info">
-            <div class="profile-info-row">
-              <div class="profile-info-name"> Full Name: </div>
-
-              <div class="profile-info-value">
-                <span>&nbsp;Md. Maruf Billah&nbsp;&nbsp;</span>
-              </div>
-            </div>
-
-            <div class="profile-info-row">
-              <div class="profile-info-name">Student ID:</div>
-
-              <div class="profile-info-value">
-                <span>1530671&nbsp;0&nbsp;42</span>
-              </div>
-            </div>
-
-            <div class="profile-info-row">
-              <div class="profile-info-name">Enrolled In:</div>
-
-              <div class="profile-info-value">
-                <span>Bachelor of Science in Computer Science and Engineering</span>
-              </div>
-            </div>
-
-            <div class="profile-info-row">
-              <div class="profile-info-name">Curriculum Name: </div>
-
-              <div class="profile-info-value">
-                <span>BS in CSE - 130 Credit Curriculum</span>
-              </div>
-            </div>
-
-            <div class="profile-info-row">
-              <div class="profile-info-name"> Entry Item: </div>
-
-              <div class="profile-info-value">
-                <span>Fall 2015</span>
-              </div>
-            </div>
-
-            <div class="profile-info-row">
-              <div class="profile-info-name">Test Pas #: </div>
-
-              <div class="profile-info-value">
-                <span>2769</span>
-              </div>
-            </div>
-
-
-
-
-
-          </div>
-        </div>
-        <!-- /.col -->
-
-
-
-
-
-
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
 </body>
 
 </html>
