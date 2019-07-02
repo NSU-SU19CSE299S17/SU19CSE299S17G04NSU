@@ -35,4 +35,7 @@ https://codepen.io/randhawa/pen/KvQqMX    //for docomentation 1st section delete
 
 https://codepen.io/vvenkatesh/pen/ZbOpox    //profile update page
 
+https://bootsnipp.com/snippets/K0ZmK  //profile page
+https://bootsnipp.com/snippets/4Mm5R  //edit profile (not use)
+
 
