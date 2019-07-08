@@ -2,8 +2,6 @@ CREATE TABLE `members`
 (
   `id` int PRIMARY KEY,
   `nsu_id` int UNIQUE,
-  `userName` int UNIQUE,
-  `psaaword` varchar(255),
   `depertment_name` varchar(255),
   `barch` int,
   `full_name` varchar(255),
@@ -157,42 +155,6 @@ CREATE TABLE `joining_quistions`
   `ans_05` varchar(255)
 );
 
-CREATE TABLE `Login`
-(
-  `login_id` int PRIMARY KEY,
-  `nsu_id` int,
-  `nsu_email` varchar(255),
-  `login_pass` varchar(255),
-  `login_name` varchar(255)
-);
-
-CREATE TABLE `SignUp`
-(
-  `signup_id` int PRIMARY KEY,
-  `SignUp_name` varchar;,
-  `nsu_id` int,
-  `depertment_name` varchar(255),
-  `barch` int,
-  `full_name` varchar(255),
-  `email` varchar(255) UNIQUE,
-  `mobile_number` varchar(255) UNIQUE,
-  `gender` varchar(255) COMMENT 'Only ''male'',''female'',''any''',
-  `date_of_birth` date,
-  `club_name` varchar(255),
-  `facebook_id` varchar(255),
-  `twtter_id` varchar(255),
-  `whatsup_id` varchar(255)
-);
-
-CREATE TABLE `login_cha`
-(
-  `login_id` int PRIMARY KEY,
-  `nsu_id` int,
-  `login_pass` varchar(255),
-  `login_name` varchar(255),
-  `login_charecter` varchar(255)
-);
-
 ALTER TABLE `clubs` ADD FOREIGN KEY (`club_member_Position`) REFERENCES `members_Positions` (`members_Position_id`);
 
 ALTER TABLE `clubs` ADD FOREIGN KEY (`club_event`) REFERENCES `events` (`event_id`);
@@ -238,16 +200,3 @@ ALTER TABLE `user_messages` ADD FOREIGN KEY (`user_message_email`) REFERENCES `m
 ALTER TABLE `joining_request` ADD FOREIGN KEY (`id`) REFERENCES `members` (`nsu_id`);
 
 ALTER TABLE `joining_request` ADD FOREIGN KEY (`questions`) REFERENCES `joining_quistions` (`joining_quistion_id`);
-
-ALTER TABLE `Login` ADD FOREIGN KEY (`nsu_id`) REFERENCES `members` (`nsu_id`);
-
-ALTER TABLE `Login` ADD FOREIGN KEY (`nsu_email`) REFERENCES `members` (`email`);
-
-ALTER TABLE `Login` ADD FOREIGN KEY (`login_pass`) REFERENCES `members` (`psaaword`);
-
-ALTER TABLE `SignUp` ADD FOREIGN KEY (`SignUp_name`) REFERENCES `members` (`userName`);
-
-ALTER TABLE `SignUp` ADD FOREIGN KEY (`nsu_id`) REFERENCES `members` (`nsu_id`);
-
-ALTER TABLE `login_cha` ADD FOREIGN KEY (`nsu_id`) REFERENCES `members` (`nsu_id`);
-
