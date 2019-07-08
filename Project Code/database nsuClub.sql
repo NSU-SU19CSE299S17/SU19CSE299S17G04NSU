@@ -2,6 +2,7 @@ CREATE TABLE `members`
 (
   `id` int PRIMARY KEY,
   `nsu_id` int UNIQUE,
+  `userName` int UNIQUE,
   `psaaword` varchar(255),
   `depertment_name` varchar(255),
   `barch` int,
@@ -240,6 +241,8 @@ ALTER TABLE `joining_request` ADD FOREIGN KEY (`questions`) REFERENCES `joining_
 ALTER TABLE `Login` ADD FOREIGN KEY (`nsu_id`) REFERENCES `members` (`nsu_id`);
 
 ALTER TABLE `Login` ADD FOREIGN KEY (`login_pass`) REFERENCES `members` (`psaaword`);
+
+ALTER TABLE `SignUp` ADD FOREIGN KEY (`SignUp_name`) REFERENCES `members` (`userName`);
 
 ALTER TABLE `SignUp` ADD FOREIGN KEY (`nsu_id`) REFERENCES `members` (`nsu_id`);
 
