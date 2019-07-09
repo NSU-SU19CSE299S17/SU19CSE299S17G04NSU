@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+
+    <title>NSUClub DashBoard</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="http://v4-alpha.getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="http://v4-alpha.getbootstrap.com/examples/navbar-top-fixed/navbar-top-fixed.css" rel="stylesheet">
+
+
+      <link rel="stylesheet" href="css\MainDashboard.css">
+
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="http://v4-alpha.getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
+  </head>
+
+
+
+
+  <main>
+  <div class="container my-5">
+         <div class="card-body text-center">
+      <h4 class="card-title">Handle The Club</h4>
+      <p class="card-text">Be careful when you remove a CLUB</p><br>
+    </div>
+      <div class="card">
+          <button id="add__new__list" type="button" class="btn btn-success position-absolute" data-toggle="modal" data-target=".bd-example-modal-lg"><i class="fas fa-plus"></i> Add a new Club</button>
+          <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th scope="col">ID</th>
+                  <th scope="col">Club Name</th>
+                  <th scope="col">Title</th>
+                  <th scope="col">Edit Club</th>
+                  <th scope="col">Club info</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Yes Club</td>
+                  <td>NSU Yes Club</td>
+                  <td>
+                      <a class="btn btn-sm btn-primary" href="#"><i class="far fa-edit"></i> edit</a>
+                      <a class="btn btn-sm btn-danger" href="#"><i class="fas fa-trash-alt"></i> delete</a>
+                  </td>
+                  <td><a class="btn btn-sm btn-info" href="#"><i class="fas fa-info-circle"></i> Details</a> </td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Yef Club</td>
+                  <td>NSU YEF CLUB</td>
+                  <td>
+                      <a class="btn btn-sm btn-primary" href="#"><i class="far fa-edit"></i> edit</a>
+                      <a class="btn btn-sm btn-danger" href="#"><i class="fas fa-trash-alt"></i> delete</a>
+                  </td>
+                  <td><a class="btn btn-sm btn-info" href="#"><i class="fas fa-info-circle"></i> Details</a> </td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>ECE Club</td>
+                  <td>Electronics and Communications Engineering Club</td>
+                  <td>
+                      <a class="btn btn-sm btn-primary" href="#"><i class="far fa-edit"></i> edit</a>
+                      <a class="btn btn-sm btn-danger" href="#"><i class="fas fa-trash-alt"></i> delete</a>
+                  </td>
+                  <td><a class="btn btn-sm btn-info" href="#"><i class="fas fa-info-circle"></i> Details</a> </td>
+                </tr>
+              </tbody>
+            </table>
+      </div>
+      <!-- Large modal -->
+
+
+  <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+            <div class="card-body text-center">
+              <h4 class="card-title">Add a new Club</h4>
+              <p class="card-text">Add the Title and name for the club and and must add a member</p>
+            </div>
+              <div class=" card col-8 offset-2 my-2 p-3">
+            <form>
+              <div class="form-group">
+                <label for="listname">Club name</label>
+                <input type="text" class="form-control" name="listname" id="listname" placeholder="Enter your Club name">
+              </div>
+              <div class="form-group">
+                <label for="datepicker">Club Title</label>
+                <input  type="text" class="form-control" name="datepicker" id="datepicker" placeholder="Enter the full name of the club">
+              </div>
+              <div class="form-group">
+                                      <label for="datepicker">Add a member</label>
+                  <div class="input-group">
+
+                    <input type="text" class="form-control" placeholder="Add member" aria-label="Search for...">
+                    <span class="input-group-btn">
+                      <button class="btn btn-secondary" type="button">Add</button>
+                    </span>
+                  </div>
+                </div>
+             <div class="form-group text-center">
+               <button type="submit" class="btn btn-block btn-primary">Done</button>
+            </div>
+          </form>
+      </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </main>
+  <!---->
+
+  <!---->
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://v4-alpha.getbootstrap.com/dist/js/bootstrap.min.js"></script>
+
+
+  </body>
+</html>
