@@ -30,7 +30,7 @@ This is how our product would solve the problem: Some NSU clubs have different w
 4. Tools: Xampp, Git, Github
 
 ### Business Plan:
-# Packages: 
+##### Packages: 
 There will be some package for every club:
 1. Free: They can only use the static part of the website
 2. Pro: They can update events, send notifications and all other features.
