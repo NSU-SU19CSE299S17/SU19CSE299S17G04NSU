@@ -3,7 +3,7 @@
 ###  North South University
 ###  Depertment of Eletrical & Computer Engineering
 
-# Project Name : NSUClubs
+# Project Name : NSU Club Aggregator
 
 
 
@@ -40,6 +40,14 @@ There will be some package for every club:
 We will use 3 payment method. The 3 methods are national method. We accept Payment via bKash, ROCKET and Bank deposits. We will set a "Methods" tab for details. The method will be more convenient for Everyone. After payment, you have to fill up the "Payment method form" with the required information and submit it. Then the user will receive a confirmation Personal Message once the donation is verified. The account will be updated within hours of form submission. Once an account is updated, then the user will be notified via a confirmation Personal message.  
 Bkash TrxID: Every bKash transaction has a Unique ID which is called TrxID. bKash provides the TrxID to both sender and receiver through an SMS immediately after a transaction. It will help us to identify or verify the transaction. And "TxnId" is for ROCKET Similar to BIKASH TrxId. For bank deposit, you have to send us the Account number (applicable for online transfer) and some user information which will be in the 'payment method form'.
            
+           
+           
+### CSE299
+#### Group: 04
+#### Section: 17
+#### Semester: Summer 2019
+### Faculty Name: Shaikh Shawon Arefin Shimon (SAS3)
+
                                                    
                                                    
 
