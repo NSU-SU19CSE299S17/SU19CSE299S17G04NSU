@@ -1,5 +1,12 @@
 [![N|Solid](http://www.northsouth.edu/newassets/images/nsu-photo/logo-4.png)]()
 
+##### contributors
+| Name | ID| Email| 
+| ------ | ------ | ------ |
+| MD Maruf Billah | 1530671042| maruf.billah@northsouth.edu| 
+| Rafsina Osman Riya | 1611446042| rafsina.riya@northsouth.edu| 
+
+
 ###  North South University
 ###  Depertment of Eletrical & Computer Engineering
 
@@ -55,8 +62,3 @@ Bkash TrxID: Every bKash transaction has a Unique ID which is called TrxID. bKas
 
                                                    
                                                    
-##### contributors
-| Name | ID| Email| 
-| ------ | ------ | ------ |
-| MD Maruf Billah | 1530671042| maruf.billah@northsouth.edu| 
-| Rafsina Osman Riya | 1611446042| rafsina.riya@northsouth.edu| 
