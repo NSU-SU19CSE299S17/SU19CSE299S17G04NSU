@@ -1,12 +1,16 @@
 [![N|Solid](http://www.northsouth.edu/newassets/images/nsu-photo/logo-4.png)]()
 
 
+###  North South University
+###  Depertment of Eletrical & Computer Engineering
+# Project Name : NSU Club Aggregator
+
+### Faculty Name: Shaikh Shawon Arefin Shimon (SAS3)
+
 # CSE299
 #### Group: 04
 #### Section: 17
 #### Semester: Summer 2019
-### Faculty Name: Shaikh Shawon Arefin Shimon (SAS3)
-
 
 ##### contributors
 | Name | ID| Email| 
@@ -15,10 +19,7 @@
 | Rafsina Osman Riya | 1611446042| rafsina.riya@northsouth.edu| 
 
 
-###  North South University
-###  Depertment of Eletrical & Computer Engineering
 
-# Project Name : NSU Club Aggregator
 
 
 
