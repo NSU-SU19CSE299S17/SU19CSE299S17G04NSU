@@ -3,11 +3,11 @@
 
 ###  North South University
 ###  Depertment of Eletrical & Computer Engineering
+
 # Project Name : NSU Club Aggregator
 
 ### Faculty Name: Shaikh Shawon Arefin Shimon (SAS3)
-
-# CSE299
+### CSE299
 #### Group: 04
 #### Section: 17
 #### Semester: Summer 2019
@@ -22,7 +22,7 @@
 
 
 
-
+#
 ### Project details:
 This is the problem we are trying to solve: Some NSU clubs have different website. There is no login option of their website. And there is no common platform for all clubs, where Student can see upcoming events, running events or get notification/message by their own club authority. Most of them are static website. static website contains information that does not change. It remains the same, or static, for every viewer of the site. But a dynamic website contains information that changes, depending on the viewer, the time of the day, the time zone, the viewer's native language, and other factors.  Even most of the clubs don’t have their own website. For the reasons they cannot do any job by their website and no student can get message or notification form the club. Also, club authority has to maintain their club by manual meeting. They don’t have any database to keep their data, student information or event handling power. Nobody cannot know about their events but some of them who are touch with their clubs. So, it is very hard for NSU club members to get notified by their own club. Also hard for NSU club authority to handle the club programs and members. So, we tried to solve this problem through a dynamic web application.
 
