@@ -1,0 +1,17 @@
+.chatroom {}
+
+.chatRoomTop {
+  background-color: red;
+  height: 30px;
+}
+
+.chatroom-mainBox {  
+  padding-top: 5px;
+  height: 700px;
+  border: 1px solid #CED4DA;
+}
+
+.chatRoomSendBox {
+  height: 50px;
+  padding-top: 5px;
+}

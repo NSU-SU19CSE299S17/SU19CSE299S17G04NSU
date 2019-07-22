@@ -1,0 +1,395 @@
+body {
+  position: relative;
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: 100%;
+}
+
+.row {
+  overflow-x: auto;
+  position: sticky;
+}
+
+.fixed-top {
+  position: absolute !important;
+}
+
+
+
+
+
+
+
+
+.profile-card-5 {
+  margin-top: 20px;
+}
+
+.profile-card-5 .btn {
+  border-radius: 2px;
+  text-transform: uppercase;
+  font-size: 12px;
+  padding: 7px 20px;
+}
+
+.profile-card-5 .card-img-block {
+  width: 91%;
+  margin: 0 auto;
+  position: relative;
+  top: -20px;
+}
+
+.profile-card-5 .card-img-block img {
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.63);
+}
+
+.profile-card-5 h5 {
+  color: #4E5E30;
+  font-weight: 600;
+}
+
+.profile-card-5 p {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.profile-card-5 .btn-primary {
+  background-color: #4E5E30;
+  border-color: #4E5E30;
+}
+
+
+
+
+
+
+
+
+/*Profile Card 3*/
+.profile-card-3 {
+  font-family: 'Open Sans', Arial, sans-serif;
+  position: relative;
+  float: left;
+  overflow: hidden;
+  width: 100%;
+  text-align: center;
+  height: 368px;
+  border: none;
+  padding-bottom: 20px;
+}
+
+.profile-card-3 .background-block {
+  float: left;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.profile-card-3 .background-block .background {
+  width: 100%;
+  vertical-align: top;
+  opacity: 0.9;
+  -webkit-filter: blur(0.5px);
+  filter: blur(0.5px);
+  -webkit-transform: scale(1.8);
+  transform: scale(2.8);
+}
+
+.profile-card-3 .card-content {
+  width: 100%;
+  padding: 15px 25px;
+  color: #232323;
+  float: left;
+  background: #efefef;
+  height: 50%;
+  border-radius: 0 0 5px 5px;
+  position: relative;
+  z-index: 9999;
+}
+
+.profile-card-3 .card-content::before {
+  content: '';
+  background: #efefef;
+  width: 120%;
+  height: 100%;
+  left: 11px;
+  bottom: 51px;
+  position: absolute;
+  z-index: -1;
+  transform: rotate(-13deg);
+}
+
+.profile-card-3 .profile {
+  border-radius: 24%;
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  max-width: 200px;
+  opacity: 1;
+  box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
+  border: 2px solid rgba(255, 255, 255, 1);
+  -webkit-transform: translate(-50%, 0%);
+  transform: translate(-50%, 0%);
+  z-index: 99999;
+}
+
+.profile-card-3 h2 {
+  margin: 0 0 5px;
+  font-weight: 600;
+  font-size: 25px;
+}
+
+.profile-card-3 h2 small {
+  display: block;
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+.profile-card-3 i {
+  display: inline-block;
+  font-size: 16px;
+  color: #232323;
+  text-align: center;
+  border: 1px solid #232323;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+
+.profile-card-3 .icon-block {
+  float: left;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.profile-card-3 .icon-block a {
+  text-decoration: none;
+}
+
+.profile-card-3 i:hover {
+  background-color: #232323;
+  color: #fff;
+  text-decoration: none;
+}
+
+
+
+
+
+
+.btn-yellow {
+  background: #FAFF8C;
+  color: #574500;
+  border: none;
+  -moz-box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  PADDING: 20px 0;
+  border-radius: 30px;
+  display: block;
+  font-size: 44px;
+}
+
+.btn-yellow:hover, .btn-yellow:focus {
+  background: #FFFF20;
+}
+
+.btn-yellow:active {
+  background: #20FF20;
+}
+
+#contactForm {
+  margin: 0 auto;
+}
+
+#contactForm input, textarea {
+  letter-spacing: 2px;
+  font: 200 1em/1.1em 'Helvetica Neue', sans-serif;
+  color: #000;
+  background-color: RGBA(204, 204, 204, .1);
+  outline: none;
+  border: .5px solid black;
+  display: block;
+  margin: 0 auto;
+  padding: 1em;
+  width: 90%;
+  max-width: 400px;
+}
+
+#contactForm textarea {
+  height: 150px;
+}
+
+#contactForm *:focus {
+  background-color: RGBA(254, 191, 4, 1);
+}
+
+#contactForm *:hover {
+  background-color: RGBA(254, 191, 4, 1);
+}
+
+::-webkit-input-placeholder {
+  color: #777;
+}
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: #777;
+}
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #777;
+}
+
+:-ms-input-placeholder {
+  color: #777;
+}
+
+
+
+
+
+
+
+
+
+
+/*FOOTER*/
+footer {
+  background: #16222A;
+  background: -webkit-linear-gradient(59deg, #3A6073, #16222A);
+  background: linear-gradient(59deg, #3A6073, #16222A);
+  color: white;
+  margin-top: 100px;
+}
+
+footer a {
+  color: #fff;
+  font-size: 14px;
+  transition-duration: 0.2s;
+}
+
+footer a:hover {
+  color: #FA944B;
+  text-decoration: none;
+}
+
+.copy {
+  font-size: 12px;
+  padding: 10px;
+  border-top: 1px solid #FFFFFF;
+}
+
+.footer-middle {
+  padding-top: 2em;
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+
+/*SOCİAL İCONS*/
+/* footer social icons */
+ul.social-network {
+  list-style: none;
+  display: inline;
+  margin-left: 0 !important;
+  padding: 0;
+}
+
+ul.social-network li {
+  display: inline;
+  margin: 0 5px;
+}
+
+
+
+
+
+
+
+
+/* footer social icons */
+.social-network a.icoFacebook:hover {
+  background-color: #3B5998;
+}
+
+.social-network a.icoLinkedin:hover {
+  background-color: #007bb7;
+}
+
+.social-network a.icoFacebook:hover i,
+.social-network a.icoLinkedin:hover i {
+  color: #fff;
+}
+
+.social-network a.socialIcon:hover,
+.socialHoverClass {
+  color: #44BCDD;
+}
+
+.social-circle li a {
+  display: inline-block;
+  position: relative;
+  margin: 0 auto 0 auto;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  font-size: 15px;
+}
+
+.social-circle li i {
+  margin: 0;
+  line-height: 30px;
+  text-align: center;
+}
+
+.social-circle li a:hover i,
+.triggeredHover {
+  -moz-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -ms--transform: rotate(360deg);
+  transform: rotate(360deg);
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.social-circle i {
+  color: #595959;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  -ms-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.social-network a {
+  background-color: #F9F9F9;
+}
+
+
+
+
+
+
+#section7 {
+  background-color: rgb(239, 239, 239);
+}

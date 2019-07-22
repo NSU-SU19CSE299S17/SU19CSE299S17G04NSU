@@ -1,0 +1,231 @@
+Table "members" {
+  "id" int [pk]
+  "nsu_id" int [unique]
+  "userName" int [unique]
+  "psaaword" varchar(255)
+  "depertment_name" varchar(255)
+  "barch" int
+  "full_name" varchar(255)
+  "email" varchar(255) [unique]
+  "mobile_number" varchar(255) [unique]
+  "gender" varchar(255)
+  "date_of_birth" date
+  "club_name" varchar(255)
+  "facebook_id" varchar(255)
+  "twtter_id" varchar(255)
+  "whatsup_id" varchar(255)
+}
+
+Table "events" {
+  "event_id" int [pk]
+  "ev_title" varchar(255) [not null]
+  "ev_description" varchar(255) [not null]
+  "ev_photo" varchar(255)
+  "ev_publish_date" date
+  "ve_date" date
+}
+
+Table "clubs" {
+  "club_id" int [pk]
+  "club_name" varchar(255) [not null]
+  "club_member_Position" int
+  "club_event" int
+  "club_about" int
+  "club_awards" int
+}
+
+Table "members_Positions" {
+  "members_Position_id" int [pk]
+  "club_president" varchar(255)
+  "club_vixe_precident" int
+  "club_genera_secretary" int
+  "club_eb" int
+  "club_treasurer" int
+  "club_sub_exicutive" int
+  "club_in_charge" int
+  "club_member" varchar(255)
+}
+
+Table "eb" {
+  "eb_id" int [pk]
+  "nsu_id" int
+  "club_name" varchar(255)
+  "joining_date" date
+}
+
+Table "presidents" {
+  "president_id" int [pk]
+  "nsu_id" int
+  "club_name" varchar(255) [unique]
+  "joining_date" date
+}
+
+Table "vice_presidents" {
+  "vice_president_id" int [pk]
+  "nsu_id" int
+  "club_name" varchar(255) [unique]
+  "joining_date" date
+}
+
+Table "general_secretarys" {
+  "general_secretary_id" int [pk]
+  "nsu_id" int
+  "club_name" varchar(255) [unique]
+  "joining_date" date
+}
+
+Table "treasurers" {
+  "treasurer_id" int [pk]
+  "nsu_id" int
+  "club_name" varchar(255)
+  "joining_date" date
+}
+
+Table "Sub_executives" {
+  "Sub_executive_id" int [pk]
+  "nsu_id" int
+  "club_name" varchar(255)
+  "joining_date" date
+}
+
+Table "in_charges" {
+  "in_charge_id" int [pk]
+  "nsu_id" int
+  "club_name" varchar(255)
+  "joining_date" date
+}
+
+Table "club_members" {
+  "club_member_id" int [pk]
+  "nsu_id" int
+  "club_name" varchar(255)
+  "joining_date" date
+}
+
+Table "abouts" {
+  "about_id" int [pk]
+  "about_title" varchar(255)
+  "about_description" varchar(255)
+}
+
+Table "awards" {
+  "award_id" int [pk]
+  "award_title" varchar(255)
+  "award_description" varchar(255)
+  "award_photo" varchar(255)
+}
+
+Table "user_messages" {
+  "user_message_id" int [pk]
+  "user_message_name" varchar(255)
+  "user_message_email" varchar(255)
+  "user_message_description" varchar(255)
+}
+
+Table "joining_request" {
+  "joining_request_id" int [pk]
+  "id" int
+  "questions" varchar(255)
+  "result" int
+  "joining_request_date" date
+}
+
+Table "joining_quistions" {
+  "joining_quistion_id" int [pk]
+  "questions_no" int
+  "ans_01" varchar(255)
+  "ans_02" varchar(255)
+  "ans_03" varchar(255)
+  "ans_04" varchar(255)
+  "ans_05" varchar(255)
+}
+
+Table "Login" {
+  "login_id" int [pk]
+  "nsu_id" int
+  "nsu_email" varchar(255)
+  "login_pass" varchar(255)
+  "login_name" varchar(255)
+}
+
+Table "SignUp" {
+  "signup_id" int [pk]
+  "SignUp_name" varchar
+  "nsu_id" int
+  "depertment_name" varchar(255)
+  "barch" int
+  "full_name" varchar(255)
+  "email" varchar(255) [unique]
+  "mobile_number" varchar(255) [unique]
+  "gender" varchar(255)
+  "date_of_birth" date
+  "club_name" varchar(255)
+  "facebook_id" varchar(255)
+  "twtter_id" varchar(255)
+  "whatsup_id" varchar(255)
+}
+
+Table "login_cha" {
+  "login_id" int [pk]
+  "nsu_id" int
+  "login_name" varchar(255)
+  "login_charecter" varchar(255)
+}
+
+Ref:"clubs"."club_member_Position" < "members_Positions"."members_Position_id"
+
+Ref:"clubs"."club_event" < "events"."event_id"
+
+Ref:"clubs"."club_about" < "abouts"."about_id"
+
+Ref:"clubs"."club_awards" < "awards"."award_id"
+
+Ref:"members_Positions"."club_president" < "presidents"."president_id"
+
+Ref:"members_Positions"."club_vixe_precident" < "vice_presidents"."vice_president_id"
+
+Ref:"members_Positions"."club_genera_secretary" < "general_secretarys"."general_secretary_id"
+
+Ref:"members_Positions"."club_eb" < "eb"."eb_id"
+
+Ref:"members_Positions"."club_treasurer" < "treasurers"."treasurer_id"
+
+Ref:"members_Positions"."club_sub_exicutive" < "Sub_executives"."Sub_executive_id"
+
+Ref:"members_Positions"."club_in_charge" < "in_charges"."in_charge_id"
+
+Ref:"members_Positions"."club_member" < "club_members"."club_member_id"
+
+Ref:"eb"."nsu_id" < "members"."nsu_id"
+
+Ref:"presidents"."nsu_id" < "members"."nsu_id"
+
+Ref:"vice_presidents"."nsu_id" < "members"."nsu_id"
+
+Ref:"general_secretarys"."nsu_id" < "members"."nsu_id"
+
+Ref:"treasurers"."nsu_id" < "members"."nsu_id"
+
+Ref:"Sub_executives"."nsu_id" < "members"."nsu_id"
+
+Ref:"in_charges"."nsu_id" < "members"."nsu_id"
+
+Ref:"club_members"."nsu_id" < "members"."nsu_id"
+
+Ref:"user_messages"."user_message_email" < "members"."email"
+
+Ref:"joining_request"."id" < "members"."nsu_id"
+
+Ref:"joining_request"."questions" < "joining_quistions"."joining_quistion_id"
+
+Ref:"Login"."nsu_id" < "members"."nsu_id"
+
+Ref:"Login"."nsu_email" < "members"."email"
+
+Ref:"Login"."login_pass" < "members"."psaaword"
+
+Ref:"SignUp"."SignUp_name" < "members"."userName"
+
+Ref:"SignUp"."nsu_id" < "members"."nsu_id"
+
+Ref:"login_cha"."nsu_id" < "members"."nsu_id"

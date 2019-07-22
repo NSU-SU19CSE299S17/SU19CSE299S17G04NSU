@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet" type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+
+  <link rel="stylesheet" href="css/indexstyle.css">
+
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+
+
+
+
+
+
+
+  <div class="container">
+    <div class=".col-xs-4 .col-md-offset-2">
+      <div class="panel panel-default panel-info Profile">
+        <div class="panel-heading"> <h1 style="text-align:center; padding-bottom:20px; padding-top:30px;">Profile update</h1> </div>
+        <div class="alert alert-success">
+          <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+          <strong>Success!</strong> Profile successfully saved
+        </div>
+        <div class="alert alert-warning">
+          <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+          <strong>Oops!</strong> Profile not saved. Try later.
+        </div>
+        <div class="panel-body">
+          <div class="form-horizontal">
+            <form>
+              <div class="form-group">
+                <label class="col-sm-2 control-label">First Name</label>
+                <div class="col-sm-4">
+                  <input class="form-control" type="text" name="firstName" placeholder="First Name" ng-model="me.firstName">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-2 control-label">Last Name</label>
+                <div class="col-sm-4">
+                  <input class="form-control" type="text" name="lastName" placeholder="Last Name" ng-model="me.lastName">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-2 control-label">NSU ID</label>
+                <div class="col-sm-4">
+                  <input class="form-control" type="text" name="email" placeholder="NSU ID" ng-model="me.email">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-2 control-label">NSU Email</label>
+                <div class="col-sm-4">
+                  <input class="form-control" type="text" name="email" placeholder="NSU Email" ng-model="me.email">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-2 control-label">Batch</label>
+                <div class="col-sm-4">
+                  <input class="form-control" type="text" name="email" placeholder="Batch" ng-model="me.email">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-2 control-label">Depertment</label>
+                <div class="col-sm-4">
+                  <input class="form-control" type="text" name="email" placeholder="Depertment. ex:ece" ng-model="me.email">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-2 control-label">Date of Birth</label>
+                <div class="col-sm-4">
+                  <input class="form-control" type="text" name="email" placeholder="ex: 2019-07-30" ng-model="me.email">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-2 control-label">Gender</label>
+                <div class="col-sm-4">
+                  <input class="form-control" type="text" name="department" placeholder="ex: male, female, any" ng-model="me.email">
+                </div>
+              </div>
+                <div class="form-group">
+                <label class="col-sm-2 control-label">Address</label>
+                <div class="col-sm-4">
+                  <input class="form-control" type="text" name="location" placeholder="address" ng-model="me.email">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-2 control-label">Phone</label>
+                <div class="col-sm-4">
+                  <input class="form-control" type="text" name="phone" placeholder="+880xxxxxxxxxx" ng-model="me.email">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                  <button class="btn btn-primary" ng-click="updateMe()">Update</button>
+                </div>
+              </div>
+            </form>
+          </div> <!-- end form-horizontal -->
+        </div> <!-- end panel-body -->
+
+      </div> <!-- end panel -->
+
+
+    </div> <!-- end size -->
+  </div> <!-- end container-fluid -->
+
+
+
+
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</body>
+
+</html>
