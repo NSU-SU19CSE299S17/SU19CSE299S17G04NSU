@@ -1,66 +1,135 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title></title>
+<html lang="en">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
-  </head>
-  <body>
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet" type='text/css'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+    <a class="navbar-brand" href="#">MARUF_BILLAH</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item active">
+          <a class="nav-link" href="#section1">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#section2">ABOUT</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#section3">AWARDS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#section4">UPCOMMING EVENT</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#section5">MEET OUR MEMBERS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#section6">JOINING REQUEST</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#section7">CONTACT</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+            MORE
+          </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#section41">CHAT ROOM</a>
+            <a class="dropdown-item" href="#section42">All Events</a>
+          </div>
+        </li>
+
+      </ul>
+
+      <form class="form-inline my-2 my-lg-0">
+
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">LOGIN</button>
+      </form>
+
+    </div>
+  </nav>
 
 
 
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
-      <a class="navbar-brand" href="#">MARUF_BILLAH</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-          <li class="nav-item active">
-            <a class="nav-link" href="#section1">HOME</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#section2">ABOUT</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#section3">AWARDS</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#section4">UPCOMMING EVENT</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#section5">MEET OUR MEMBERS</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#section6">JOINING REQUEST</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#section7">CONTACT</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-              MORE
-            </a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="#section41">CHAT ROOM</a>
-              <a class="dropdown-item" href="#section42">All Events</a>
-            </div>
-          </li>
 
-        </ul>
+  <section id="section1" class=" bg-primary" style="padding-top:55px;">
+    <div id="demo" class="carousel slide" data-ride="carousel">
+      <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
+        <li data-target="#demo" data-slide-to="3"></li>
+        <li data-target="#demo" data-slide-to="4"></li>
+      </ul>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="photos/pic01.jpg" alt="NSU Club" width="1100" height="500">
+          <div class="carousel-caption">
+            <h3>auditorium</h3>
+            <p>We had such a great time in auditorium</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="photos/pic02.jpg" alt="NSU" width="1100" height="500">
+          <div class="carousel-caption">
+            <h3>robot wrestling</h3>
+            <p>Thank you, Team M4za1</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="photos/pic03.jpg" alt="Bd in NSU" width="1100" height="500">
+          <div class="carousel-caption">
+            <h3>NSU APC Club</h3>
+            <p>We love the them</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="photos/pic04.jpg" alt="Bd NSU" width="1100" height="500">
+          <div class="carousel-caption">
+            <h3>Club fair</h3>
+            <p>Club fair is comming soon</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="photos/pic05.jpg" alt="B NSU" width="1100" height="500">
+          <div class="carousel-caption">
+            <h3>Club fair</h3>
+            <p>Club fair is comming soon</p>
+          </div>
+        </div>
 
-        <form class="form-inline my-2 my-lg-0">
-
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">LOGIN</button>
-        </form>
-
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
       </div>
-    </nav>
+    </div>
+  </section>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
-  </body>
+
+
+
+
+</body>
+
 </html>
