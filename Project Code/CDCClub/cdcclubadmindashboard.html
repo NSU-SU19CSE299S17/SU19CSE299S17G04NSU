@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboard</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet" type='text/css'>
+
+  <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  <link rel="stylesheet" href="css/cdcclubadmindashboardstyle.css">
+</head>
+
+<body>
+
+
+
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+    <a class="navbar-brand" href="#">MARUF_BILLAH</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item active">
+          <a class="nav-link" href="#section1">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#section2">Edit Top Pictures</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#section3">Edit about</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#awardsecedit">Edit AWARDS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#eventssecedit">Edit EVENT</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#memberssecedit">Edit MEMBERS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#section7">CONTACT</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+            MORE
+          </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#section41">CHAT ROOM</a>
+            <a class="dropdown-item" href="#section42">EMERGENCY</a>
+          </div>
+        </li>
+
+      </ul>
+
+      <form class="form-inline my-2 my-lg-0">
+
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">LOGOUT</button>
+      </form>
+
+    </div>
+  </nav>
+
+
+
+
+
+
+  <section class="container" id="section2" style="padding-top:70px; padding-bottom:70px;">
+
+
+    <h1 style="text-align: center;">Edit Home Images</h1>
+
+
+
+    <div class="row flex-row flex-nowrap">
+
+
+
+
+      <div class="test" id="test1">
+        <img width="450" height="300" src="photos/pic01.jpg">
+
+        <a class="remImage" href="#" id="delete1">
+          <img src="https://image.flaticon.com/icons/svg/261/261935.svg" style="width:40px;height:40px;">
+        </a>
+      </div>
+
+      <div class="test" id="test2">
+        <img width="450" height="300" src="photos/pic02.jpg">
+
+        <a class="remImage" href="#" id="delete2">
+          <img src="https://image.flaticon.com/icons/svg/261/261935.svg" style="width:40px;height:40px;">
+        </a>
+      </div>
+
+      <div class="test" id="test3">
+        <img width="450" height="300" src="photos/pic03.jpg">
+
+        <a class="remImage" href="#" id="delete3">
+          <img src="https://image.flaticon.com/icons/svg/261/261935.svg" style="width:40px;height:40px;">
+        </a>
+      </div>
+
+      <div class="test" id="test4">
+        <img width="450" height="300" src="photos/pic04.jpg">
+
+        <a class="remImage" href="#" id="delete4">
+          <img src="https://image.flaticon.com/icons/svg/261/261935.svg" style="width:40px;height:40px;">
+        </a>
+      </div>
+
+      <div class="test" id="test5">
+        <img width="450" height="300" src="photos/pic05.jpg">
+
+        <a class="remImage" href="#" id="delete5">
+          <img src="https://image.flaticon.com/icons/svg/261/261935.svg" style="width:40px;height:40px;">
+        </a>
+      </div>
+
+
+    </div>
+
+
+    <br>
+    <button type="submit" class="btn btn-primary">Submit</button>
+    <br>
+
+    <br>
+    <div class="input-group">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
+      </div>
+      <div class="custom-file">
+        <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
+        <label class="custom-file-label" for="inputGroupFile01">Choose new image</label>
+      </div>
+    </div>
+    <br>
+
+
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+
+  </section>
+
+
+
+
+  <section class="container" id="section3" style="padding-top:70px; padding-bottom:70px;">
+
+    <div class="">
+
+      <div class="container">
+        <h1 style="text-align: center;">Edit about area</h1>
+
+        <form action="/action_page.php">
+          <div class="form-group">
+            <label for="comment">Change</label>
+            <textarea class="form-control" rows="5" id="comment" name="text">
+            NSU Cine & Drama Club (NSUCDC) can be described as a club that aims to promote the appreciation of the art of cinema and theatre. The tag line of the club is "Explore Yourself.
+            </textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+
+
+    </div>
+
+  </section>
+
+
+
+
+  <section class="container " id="awardsecedit" style="padding-top:70px; padding-bottom:70px; width:100%;">
+    <h1 style="text-align:center; padding-bottom:40px;">Edit AWARDS Section</h1>
+    <div class="container-fluid">
+      <div class="row flex-row">
+        <!--Grid column-->
+        <div class="col-4 col-md-4 mt-2 col-sm-6 col-lg-2 test01" id="aw01">
+          <img class="col-12 col-md-12 mt-22 col-sm-12 col-lg-12" alt="100x100" src="photos/award01.png">
+
+          <a class="remImage" href="#awardsecedit" id="daw01">
+            <img src="https://image.flaticon.com/icons/svg/261/261935.svg" style="width:40px;height:40px;">
+          </a>
+        </div>
+
+        <div class="col-4 col-md-4 mt-3 col-sm-6 col-lg-2 test01" id="aw02">
+          <img class="col-12 col-md-12 mt-22 col-sm-12 col-lg-12 " alt="100x100" src="photos/award02.png">
+
+          <a class="remImage" href="#awardsecedit" id="daw02">
+            <img src="https://image.flaticon.com/icons/svg/261/261935.svg" style="width:40px;height:40px;">
+          </a>
+        </div>
+
+
+        <div class="col-4 col-md-4 mt-3 col-sm-6 col-lg-2 test01" id="aw03">
+          <img class="col-12 col-md-12 mt-22 col-sm-12 col-lg-12 alt=" 100x100" src="photos/award03.png">
+
+          <a class="remImage" href="#awardsecedit" id="daw03">
+            <img src="https://image.flaticon.com/icons/svg/261/261935.svg" style="width:40px;height:40px;">
+          </a>
+        </div>
+
+
+        <div class="col-4 col-md-4 mt-3 col-sm-6 col-lg-2 test01" id="aw04">
+          <img class="col-12 col-md-12 mt-22 col-sm-12 col-lg-12 alt=" 100x100" src="photos/award04.png">
+
+          <a class="remImage" href="#awardsecedit" id="daw04">
+            <img src="https://image.flaticon.com/icons/svg/261/261935.svg" style="width:40px;height:40px;">
+          </a>
+        </div>
+
+
+        <div class="col-4 col-md-4 mt-3 col-sm-6 col-lg-2 test01" id="aw05">
+          <img class="col-12 col-md-12 mt-22 col-sm-12 col-lg-12 alt=" 100x100" src="photos/award05.png">
+
+          <a class="remImage" href="#awardsecedit" id="daw05">
+            <img src="https://image.flaticon.com/icons/svg/261/261935.svg" style="width:40px;height:40px;">
+          </a>
+        </div>
+
+
+        <div class="col-4 col-md-4 mt-3 col-sm-6 col-lg-2 test01" id="aw06">
+          <img class="col-12 col-md-12 mt-22 col-sm-12 col-lg-12 alt=" 100x100" src="photos/award06.png">
+
+          <a class="remImage" href="#awardsecedit" id="daw06">
+            <img src="https://image.flaticon.com/icons/svg/261/261935.svg" style="width:40px;height:40px;">
+          </a>
+        </div>
+
+
+        <div class="col-4 col-md-4 mt-3 col-sm-6 col-lg-2 test01" id="aw07">
+          <img class="col-12 col-md-12 mt-22 col-sm-12 col-lg-12 alt=" 100x100" src="photos/award07.png">
+
+          <a class="remImage" href="#awardsecedit" id="daw07">
+            <img src="https://image.flaticon.com/icons/svg/261/261935.svg" style="width:40px;height:40px;">
+          </a>
+        </div>
+
+
+        <div class="col-4 col-md-4 mt-3 col-sm-6 col-lg-2 test01" id="aw08">
+          <img class="col-12 col-md-12 mt-22 col-sm-12 col-lg-12 alt=" 100x100" src="photos/award08.png">
+
+          <a class="remImage" href="#awardsecedit" id="daw08">
+            <img src="https://image.flaticon.com/icons/svg/261/261935.svg" style="width:40px;height:40px;">
+          </a>
+        </div>
+
+
+        <div class="col-4 col-md-4 mt-3 col-sm-6 col-lg-2 test01" id="aw09">
+          <img class="col-12 col-md-12 mt-22 col-sm-12 col-lg-12 alt=" 100x100" src="photos/award09.png">
+
+          <a class="remImage" href="#awardsecedit" id="daw09">
+            <img src="https://image.flaticon.com/icons/svg/261/261935.svg" style="width:40px;height:40px;">
+          </a>
+        </div>
+
+
+        <div class="col-4 col-md-4 mt-3 col-sm-6 col-lg-2 test01" id="aw10">
+          <img class="col-12 col-md-12 mt-22 col-sm-12 col-lg-12 alt=" 100x100" src="photos/award10.png">
+
+          <a class="remImage" href="#awardsecedit" id="daw10">
+            <img src="https://image.flaticon.com/icons/svg/261/261935.svg" style="width:40px;height:40px;">
+          </a>
+        </div>
+
+
+        <div class="col-4 col-md-4 mt-3 col-sm-6 col-lg-2 test01" id="aw11">
+          <img class="col-12 col-md-12 mt-22 col-sm-12 col-lg-12 alt=" 100x100" src="photos/award11.png">
+
+          <a class="remImage" href="#awardsecedit" id="daw11">
+            <img src="https://image.flaticon.com/icons/svg/261/261935.svg" style="width:40px;height:40px;">
+          </a>
+        </div>
+
+
+        <div class="col-4 col-md-4 mt-3 col-sm-6 col-lg-2 test01" id="aw12">
+          <img class="col-12 col-md-12 mt-22 col-sm-12 col-lg-12 alt=" 100x100" src="photos/award12.png">
+
+          <a class="remImage" href="#awardsecedit" id="daw12">
+            <img src="https://image.flaticon.com/icons/svg/261/261935.svg" style="width:40px;height:40px;">
+          </a>
+        </div>
+
+
+        <div class="col-4 col-md-4 mt-3 col-sm-6 col-lg-2 test01" id="aw13">
+          <img class="col-12 col-md-12 mt-22 col-sm-12 col-lg-12 alt=" 100x100" src="photos/award13.png">
+
+          <a class="remImage" href="#awardsecedit" id="daw13">
+            <img src="https://image.flaticon.com/icons/svg/261/261935.svg" style="width:40px;height:40px;">
+          </a>
+        </div>
+
+
+        <div class="col-4 col-md-4 mt-3 col-sm-6 col-lg-2 test01" id="aw14">
+          <img class="col-12 col-md-12 mt-22 col-sm-12 col-lg-12 alt=" 100x100" src="photos/award14.png">
+
+          <a class="remImage" href="#awardsecedit" id="daw14">
+            <img src="https://image.flaticon.com/icons/svg/261/261935.svg" style="width:40px;height:40px;">
+          </a>
+        </div>
+
+
+        <div class="col-4 col-md-4 mt-3 col-sm-6 col-lg-2 test01" id="aw15">
+          <img class="col-12 col-md-12 mt-22 col-sm-12 col-lg-12 alt=" 100x100" src="photos/award15.png">
+
+          <a class="remImage" href="#awardsecedit" id="daw15">
+            <img src="https://image.flaticon.com/icons/svg/261/261935.svg" style="width:40px;height:40px;">
+          </a>
+        </div>
+
+
+        <div class="col-4 col-md-4 mt-3 col-sm-6 col-lg-2 test01" id="aw16">
+          <img class="col-12 col-md-12 mt-22 col-sm-12 col-lg-12 alt=" 100x100" src="photos/award07.png">
+
+          <a class="remImage" href="#awardsecedit" id="daw16">
+            <img src="https://image.flaticon.com/icons/svg/261/261935.svg" style="width:40px;height:40px;">
+          </a>
+        </div>
+
+
+        <div class="col-4 col-md-4 mt-3 col-sm-6 col-lg-2 test01" id="aw17">
+          <img class="col-12 col-md-12 mt-22 col-sm-12 col-lg-12 alt=" 100x100" src="photos/award08.png">
+
+          <a class="remImage" href="#awardsecedit" id="daw17">
+            <img src="https://image.flaticon.com/icons/svg/261/261935.svg" style="width:40px;height:40px;">
+          </a>
+        </div>
+
+
+        <div class="col-4 col-md-4 mt-3 col-sm-6 col-lg-2 test01" id="aw18">
+          <img class="col-12 col-md-12 mt-22 col-sm-12 col-lg-12 alt=" 100x100" src="photos/award07.png">
+
+          <a class="remImage" href="#awardsecedit" id="daw18">
+            <img src="https://image.flaticon.com/icons/svg/261/261935.svg" style="width:40px;height:40px;">
+          </a>
+        </div>
+
+
+      </div>
+
+      <br>
+      <button type="submit" class="btn btn-primary">Submit</button>
+      <br>
+
+      <br>
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
+        </div>
+        <div class="custom-file">
+          <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
+          <label class="custom-file-label" for="inputGroupFile01">Choose new award</label>
+        </div>
+      </div>
+      <br>
+
+
+
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+
+
+  </section>
+
+
+
+
+
+
+
+
+
+  <section class="container" id="eventssecedit" style="padding-top:70px;padding-bottom:70px; width:100%;">
+    <h1 style="text-align:center; padding-bottom:40px;">Edit UPCOMMING EVENTS</h1>
+    <div class="container-fluid">
+      <div class="row flex-row flex-nowrap">
+
+
+        <div class="col-12 col-md-4 mt-3 col-sm-6 col-lg-4 test02" id="eue01">
+          <div class="card profile-card-5">
+            <div class="card-img-block">
+              <img class="card-img-top" src="http://www.northsouth.edu/assets/images/PRO-Office/19conv-3.jpg" alt="Card image cap">
+            </div>
+            <div class="col-12 card-body pt-0">
+              <h5 class="card-title">19th Convocation of NSU</h5>
+              <p class="card-text">On Thursday, February 18, North South University held its 19th Convocation for our new graduates. It was a grand ceremony to bid farewell to our former students, now new graduates, with both a heavy and a happy
+                heart.</p>
+              <a href="#" class="btn btn-primary">See Details</a>
+            </div>
+            <a class="remImage" href="#eventssecedit" id="eued01">
+              <img src="https://image.flaticon.com/icons/svg/261/261935.svg" style="width:40px;height:40px;">
+            </a>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 mt-3 col-sm-6 col-lg-4  test02" id="eue02">
+          <div class="card profile-card-5">
+            <div class="card-img-block">
+              <img class="card-img-top" src="http://www.northsouth.edu/assets/images/PRO-Office/19conv-3.jpg" alt="Card image cap">
+            </div>
+            <div class="card-body pt-0">
+              <h5 class="card-title">19th Convocation of NSU</h5>
+              <p class="card-text">On Thursday, February 18, North South University held its 19th Convocation for our new graduates. It was a grand ceremony to bid farewell to our former students, now new graduates, with both a heavy and a happy
+                heart.</p>
+              <a href="#" class="btn btn-primary">See Details</a>
+            </div>
+            <a class="remImage" href="#eventssecedit" id="eued02">
+              <img src="https://image.flaticon.com/icons/svg/261/261935.svg" style="width:40px;height:40px;">
+            </a>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 mt-3 col-sm-6 col-lg-4 test02" id="eue03">
+          <div class="card profile-card-5">
+            <div class="card-img-block">
+              <img class="card-img-top" src="http://www.northsouth.edu/assets/images/PRO-Office/19conv-3.jpg" alt="Card image cap">
+            </div>
+            <div class="card-body pt-0">
+              <h5 class="card-title">19th Convocation of NSU</h5>
+              <p class="card-text">On Thursday, February 18, North South University held its 19th Convocation for our new graduates. It was a grand ceremony to bid farewell to our former students, now new graduates, with both a heavy and a happy
+                heart.</p>
+              <a href="#" class="btn btn-primary">See Details</a>
+            </div>
+            <a class="remImage" href="#eventssecedit" id="eued03">
+              <img src="https://image.flaticon.com/icons/svg/261/261935.svg" style="width:40px;height:40px;">
+            </a>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 mt-3 col-sm-6 col-lg-4 test02" id="eue04">
+          <div class="card profile-card-5">
+            <div class="card-img-block">
+              <img class="card-img-top" src="http://www.northsouth.edu/assets/images/PRO-Office/19conv-3.jpg" alt="Card image cap">
+            </div>
+            <div class="card-body pt-0">
+              <h5 class="card-title">19th Convocation of NSU</h5>
+              <p class="card-text">On Thursday, February 18, North South University held its 19th Convocation for our new graduates. It was a grand ceremony to bid farewell to our former students, now new graduates, with both a heavy and a happy
+                heart.</p>
+              <a href="#" class="btn btn-primary">See Details</a>
+            </div>
+            <a class="remImage" href="#eventssecedit" id="eued04">
+              <img src="https://image.flaticon.com/icons/svg/261/261935.svg" style="width:40px;height:40px;">
+            </a>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 mt-3 col-sm-6 col-lg-4 test02" id="eue05">
+          <div class="card profile-card-5">
+            <div class="card-img-block">
+              <img class="card-img-top" src="http://www.northsouth.edu/assets/images/PRO-Office/19conv-3.jpg" alt="Card image cap">
+            </div>
+            <div class="card-body pt-0">
+              <h5 class="card-title">19th Convocation of NSU</h5>
+              <p class="card-text">On Thursday, February 18, North South University held its 19th Convocation for our new graduates. It was a grand ceremony to bid farewell to our former students, now new graduates, with both a heavy and a happy
+                heart.</p>
+              <a href="#" class="btn btn-primary">See Details</a>
+            </div>
+            <a class="remImage" href="#eventssecedit" id="eued05">
+              <img src="https://image.flaticon.com/icons/svg/261/261935.svg" style="width:40px;height:40px;">
+            </a>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 mt-3 col-sm-6 col-lg-4 test02" id="eue06">
+          <div class="card profile-card-5">
+            <div class="card-img-block">
+              <img class="card-img-top" src="http://www.northsouth.edu/assets/images/PRO-Office/19conv-3.jpg" alt="Card image cap">
+            </div>
+            <div class="card-body pt-0">
+              <h5 class="card-title">19th Convocation of NSU</h5>
+              <p class="card-text">On Thursday, February 18, North South University held its 19th Convocation for our new graduates. It was a grand ceremony to bid farewell to our former students, now new graduates, with both a heavy and a happy
+                heart.</p>
+              <a href="#" class="btn btn-primary">See Details</a>
+            </div>
+            <a class="remImage" href="#eventssecedit" id="eued06">
+              <img src="https://image.flaticon.com/icons/svg/261/261935.svg" style="width:40px;height:40px;">
+            </a>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 mt-3 col-sm-6 col-lg-4 test02" id="eue07">
+          <div class="card profile-card-5">
+            <div class="card-img-block">
+              <img class="card-img-top" src="http://www.northsouth.edu/assets/images/PRO-Office/19conv-3.jpg" alt="Card image cap">
+            </div>
+            <div class="card-body pt-0">
+              <h5 class="card-title">19th Convocation of NSU</h5>
+              <p class="card-text">On Thursday, February 18, North South University held its 19th Convocation for our new graduates. It was a grand ceremony to bid farewell to our former students, now new graduates, with both a heavy and a happy
+                heart.</p>
+              <a href="#" class="btn btn-primary">See Details</a>
+            </div>
+            <a class="remImage" href="#eventssecedit" id="eued07">
+              <img src="https://image.flaticon.com/icons/svg/261/261935.svg" style="width:40px;height:40px;">
+            </a>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 mt-3 col-sm-6 col-lg-4 test02" id="eue08">
+          <div class="card profile-card-5">
+            <div class="card-img-block">
+              <img class="card-img-top" src="http://www.northsouth.edu/assets/images/PRO-Office/19conv-3.jpg" alt="Card image cap">
+            </div>
+            <div class="card-body pt-0">
+              <h5 class="card-title">19th Convocation of NSU</h5>
+              <p class="card-text">On Thursday, February 18, North South University held its 19th Convocation for our new graduates. It was a grand ceremony to bid farewell to our former students, now new graduates, with both a heavy and a happy
+                heart.</p>
+              <a href="#" class="btn btn-primary">See Details</a>
+            </div>
+            <a class="remImage" href="#eventssecedit" id="eued08">
+              <img src="https://image.flaticon.com/icons/svg/261/261935.svg" style="width:40px;height:40px;">
+            </a>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 mt-3 col-sm-6 col-lg-4 test02" id="eue09">
+          <div class="card profile-card-5">
+            <div class="card-img-block">
+              <img class="card-img-top" src="http://www.northsouth.edu/assets/images/PRO-Office/19conv-3.jpg" alt="Card image cap">
+            </div>
+            <div class="card-body pt-0">
+              <h5 class="card-title">19th Convocation of NSU</h5>
+              <p class="card-text">On Thursday, February 18, North South University held its 19th Convocation for our new graduates. It was a grand ceremony to bid farewell to our former students, now new graduates, with both a heavy and a happy
+                heart.</p>
+              <a href="#" class="btn btn-primary">See Details</a>
+            </div>
+            <a class="remImage" href="#eventssecedit" id="eued09">
+              <img src="https://image.flaticon.com/icons/svg/261/261935.svg" style="width:40px;height:40px;">
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <br>
+      <button type="submit" class="btn btn-primary">Submit</button>
+      <br>
+
+
+
+    </div>
+    <br><br>
+
+
+
+    <div class="">
+
+      <div class="">
+        <div class="form-group">
+          <label for="formGroupExampleInput">Title</label>
+          <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Update your events Title">
+        </div>
+
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1">Description</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Update your events description" rows="3"></textarea>
+        </div>
+
+        <form>
+          <div class="form-group">
+            <label for="exampleFormControlFile1">Upload Event photo</label>
+            <input type="file" class="form-control-file" id="exampleFormControlFile1">
+          </div>
+        </form>
+
+      </div>
+
+
+
+
+
+      <br>
+      <button type="submit" class="btn btn-primary">Submit</button>
+      <br>
+    </div>
+
+
+  </section>
+
+
+
+
+
+  <section class="container" style="padding-top:70px;padding-bottom:70px" id="memberssecedit">
+
+
+    <h1 style="text-align:center; padding-bottom:40px;">Edit MEET OUR MEMBERS Section</h1>
+
+    <div class="row">
+
+
+      <!--Profile Card 3-->
+      <div class="col-12 col-md-4 mt-3 col-sm-6 col-lg-4 test03" id="moms01" style="position: center;">
+        <div class="card profile-card-3">
+          <div class="background-block">
+
+          </div>
+          <div class="profile-thumb-block">
+            <img src="photos/maruf.jpg" alt="profile-image" class="profile" />
+          </div>
+          <div class="card-content">
+            <h2>Maruf Billah<small>Designer</small></h3>
+              <div class="icon-block"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"> <i class="fa fa-twitter"></i></a><a href="#"> <i class="fa fa-google-plus"></i></a></div>
+          </div>
+          <a class="remImage" href="#memberssecedit" id="momsd01">
+            <img src="https://image.flaticon.com/icons/svg/261/261935.svg" style="width:40px;height:40px;">
+          </a>
+        </div>
+      </div>
+
+      <!--Profile Card 3-->
+      <div class="col-12 col-md-4 mt-3 col-sm-6 col-lg-4 test03" id="moms02">
+        <div class="card profile-card-3">
+          <div class="background-block">
+
+          </div>
+          <div class="profile-thumb-block">
+            <img src="photos/maruf.jpg" alt="profile-image" class="profile" data-holder-rendered="true" />
+          </div>
+          <div class="card-content">
+            <h2>Maruf Billah<small>Designer</small></h3>
+              <div class="icon-block"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"> <i class="fa fa-twitter"></i></a><a href="#"> <i class="fa fa-google-plus"></i></a></div>
+          </div>
+          <a class="remImage" href="#memberssecedit" id="momsd02">
+            <img src="https://image.flaticon.com/icons/svg/261/261935.svg" style="width:40px;height:40px;">
+          </a>
+        </div>
+      </div>
+
+      <!--Profile Card 3-->
+      <div class="col-12 col-md-4 mt-3 col-sm-6 col-lg-4 test03" id="moms03">
+        <div class="card profile-card-3">
+          <div class="background-block">
+            <img src="https://images.pexels.com/photos/459225/pexels-photo-459225.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="profile-sample1" class="background" />
+          </div>
+          <div class="profile-thumb-block">
+            <img src="photos/maruf.jpg" alt="profile-image" class="profile" data-holder-rendered="true" />
+          </div>
+          <div class="card-content">
+            <h2>Maruf Billah<small>Designer</small></h3>
+              <div class="icon-block"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"> <i class="fa fa-twitter"></i></a><a href="#"> <i class="fa fa-google-plus"></i></a></div>
+          </div>
+          <a class="remImage" href="#memberssecedit" id="momsd03">
+            <img src="https://image.flaticon.com/icons/svg/261/261935.svg" style="width:40px;height:40px;">
+          </a>
+        </div>
+      </div>
+
+      <!--Profile Card 3-->
+      <div class="col-12 col-md-4 mt-3 col-sm-6 col-lg-4 test03" id="moms04">
+        <div class="card profile-card-3">
+          <div class="background-block">
+            <img src="https://images.pexels.com/photos/459225/pexels-photo-459225.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="profile-sample1" class="background" />
+          </div>
+          <div class="profile-thumb-block">
+            <img src="photos/maruf.jpg" alt="profile-image" class="profile" data-holder-rendered="true" />
+          </div>
+          <div class="card-content">
+            <h2>Maruf Billah<small>Designer</small></h3>
+              <div class="icon-block"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"> <i class="fa fa-twitter"></i></a><a href="#"> <i class="fa fa-google-plus"></i></a></div>
+          </div>
+          <a class="remImage" href="#memberssecedit" id="momsd04">
+            <img src="https://image.flaticon.com/icons/svg/261/261935.svg" style="width:40px;height:40px;">
+          </a>
+        </div>
+      </div>
+
+      <!--Profile Card 3-->
+      <div class="col-12 col-md-4 mt-3 col-sm-6 col-lg-4 test03" id="moms05">
+        <div class="card profile-card-3">
+          <div class="background-block">
+            <img src="https://images.pexels.com/photos/459225/pexels-photo-459225.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="profile-sample1" class="background" />
+          </div>
+          <div class="profile-thumb-block">
+            <img src="photos/maruf.jpg" alt="profile-image" class="profile" data-holder-rendered="true" />
+          </div>
+          <div class="card-content">
+            <h2>Maruf Billah<small>Designer</small></h3>
+              <div class="icon-block"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"> <i class="fa fa-twitter"></i></a><a href="#"> <i class="fa fa-google-plus"></i></a></div>
+          </div>
+          <a class="remImage" href="#memberssecedit" id="momsd05">
+            <img src="https://image.flaticon.com/icons/svg/261/261935.svg" style="width:40px;height:40px;">
+          </a>
+        </div>
+      </div>
+
+
+    </div>
+
+    <br>
+    <button type="submit" class="btn btn-primary">Submit</button>
+    <br><br><br>
+
+    <div class="">
+      <div class="form-group">
+        <label for="formGroupExampleInput">Full Name</label>
+        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Update your member name">
+      </div>
+
+      <div class="">
+        <div class="form-group">
+          <label for="formGroupExampleInput">Title</label>
+          <input type="text" class="form-control" id="formGroupExampleInput" placeholder="pdate your member title">
+        </div>
+
+
+        <form>
+          <div class="form-group">
+            <label for="exampleFormControlFile1">Upload profile photo</label>
+            <input type="file" class="form-control-file" id="exampleFormControlFile1" >
+          </div>
+        </form>
+
+      </div>
+
+
+
+
+
+      <br>
+      <button type="submit" class="btn btn-primary center-block">Submit</button>
+      <br>
+
+  </section>
+
+
+
+
+
+
+
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/cdcclubadmindashboardjs.js"></script>
+
+</body>
+
+</html>
