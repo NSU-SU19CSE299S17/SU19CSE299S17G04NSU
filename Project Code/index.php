@@ -1,3 +1,13 @@
+<?php require 'index.php'; ?>
+<?php
+
+   $db=db_connect();
+   // checking session validation
+
+
+ ?>
+
+
 <!DOCTYPE html>
 <html>
 
