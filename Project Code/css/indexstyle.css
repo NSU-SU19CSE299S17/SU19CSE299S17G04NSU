@@ -184,3 +184,19 @@ ul.social-network li {
 .social-network a {
   background-color: #F9F9F9;
 }
+
+
+.event-data{
+  height: 240px;
+}
+.card-style{
+  height: 450px;
+}
+.card-inner-text{
+ height: 100px;
+ overflow: hidden;
+}
+.title-card {
+  height: 100px;
+  overflow: hidden;
+}

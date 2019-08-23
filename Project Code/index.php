@@ -1,12 +1,13 @@
-<?php require 'index.php'; ?>
+<?php session_start(); ?> <!-- starting session -->
+<?php require 'function.php'; ?> <!-- Calling  pre-built function -->
+<?php ob_start(); ?>  <!--  Starting buffer output -->
+
 <?php
 
    $db=db_connect();
-   // checking session validation
 
 
  ?>
-
 
 <!DOCTYPE html>
 <html>
@@ -34,16 +35,10 @@
 
 
 
-
-
-
-
   <section>
-
-
     <!-- <nav class="navbar navbar-expand-sm bg-dark navbar-dark"> -->
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
-      <a class="navbar-brand" href="#">MARUF_BILLAH</a>
+      <a class="navbar-brand" href="#">NSU Clubs</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -128,153 +123,58 @@
   </section>
 
 
+  <section style="height: 5rem">
+  </section>
 
   <section class="container">
 
 
 
-
-    <section style="height: 4rem;   margin-top: .1rem solid black;">
-
+    <h2 style="text-align: center; font-size: 3rem;">About</h2>
+    <section style="height: 1rem">
     </section>
+    <section style="display: block; text-align: center; height:40rem; ">
+      <h5 style="padding-top: 100rem solid black; padding-button: 100rem solid black;">
+        This is the problem we are trying to solve: Some NSU clubs have different website. There is no login option of their website. And there is no common platform for all clubs, where Student can see upcoming events, running events or get notification/message by their own club authority. Most of them are static website. static website contains information that does not change. It remains the same, or static, for every viewer of the site. But a dynamic website contains information that changes, depending on the viewer, the time of the day, the time zone, the viewer's native language, and other factors. Even most of the clubs don’t have their own website. For the reasons they cannot do any job by their website and no student can get message or notification form the club. Also, club authority has to maintain their club by manual meeting. They don’t have any database to keep their data, student information or event handling power. Nobody cannot know about their events but some of them who are touch with their clubs. So, it is very hard for NSU club members to get notified by their own club. Also hard for NSU club authority to handle the club programs and members. So, we tried to solve this problem through a dynamic web application. This is how our product would solve the problem: Some NSU clubs have different websites but we will open one website for all NSU students. They can login to our website. All club’s members can include their information in the website. they can get messages, do chatting, get events updates, get notifications or any information through our website. Our website will have a database where every data will be stored. We will store all members information, all events information and the information of recruitments. All student can recruit any club via our website. Our website will be a platform where everyone visits and collect all type information. Also, club authority can buy package for their own club. We will have some packages. We will allow few facilities for the free package holder and more facilities for them who buy package from us. We have a signup page where everyone allowed to sign up. And login page for them who are already the member of the club. We frequently update every club event in our page. The top events will be highlight in the top of our pages. Every pro club authority has an option to buy a package from us to highlight their feature in our main page. Our website has different view version for mobile, personal computer, laptop and tablet. The website will also be allowed for large screen display. And we will create a chatroom for club members where everyone could chat with their club members.
+      </h5>
+    </section>
+
+
+
 
 
     <h2 style="text-align: center; font-size: 3rem;">TOP EVENTS</h2>
-
-
     <section style="height: 1rem">
-
     </section>
-
-
-
     <section style="width :100%;">
-
       <div class="container-fluid">
         <div class="row flex-row flex-nowrap">
 
+          <?php
+            $events="SELECT * FROM event";
+            $event_result=mysqli_query($db,$events);
+            if (mysqli_num_rows($event_result)>0) {
+              while ($event_record=mysqli_fetch_assoc($event_result)) {
+                ?>
+
           <div class="col-12 col-md-4 mt-3 col-sm-6 col-lg-4">
-            <div class="card profile-card-5">
+            <div class="card profile-card-5 card-style">
               <div class="card-img-block">
-                <img class="card-img-top" src="http://www.northsouth.edu/assets/images/PRO-Office/19conv-3.jpg" alt="Card image cap">
+                <img class="card-img-top event-data" src="photos/<?php echo $event_record['photo']; ?>" alt="Card image cap">
               </div>
               <div class="col-12 card-body pt-0">
-                <h5 class="card-title">19th Convocation of NSU</h5>
-                <p class="card-text">On Thursday, February 18, North South University held its 19th Convocation for our new graduates. It was a grand ceremony to bid farewell to our former students, now new graduates, with both a heavy and a happy
-                  heart.</p>
+                <h5 class="card-title card-title"><?php echo $event_record['title'];?></h5>
+                <p class="card-text card-inner-text"><?php echo $event_record['description']; ?></p>
                 <a href="#" class="btn btn-primary">See Details</a>
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-4 mt-3 col-sm-6 col-lg-4">
-            <div class="card profile-card-5">
-              <div class="card-img-block">
-                <img class="card-img-top" src="http://www.northsouth.edu/assets/images/PRO-Office/19conv-3.jpg" alt="Card image cap">
-              </div>
-              <div class="card-body pt-0">
-                <h5 class="card-title">19th Convocation of NSU</h5>
-                <p class="card-text">On Thursday, February 18, North South University held its 19th Convocation for our new graduates. It was a grand ceremony to bid farewell to our former students, now new graduates, with both a heavy and a happy
-                  heart.</p>
-                <a href="#" class="btn btn-primary">See Details</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-4 mt-3 col-sm-6 col-lg-4">
-            <div class="card profile-card-5">
-              <div class="card-img-block">
-                <img class="card-img-top" src="http://www.northsouth.edu/assets/images/PRO-Office/19conv-3.jpg" alt="Card image cap">
-              </div>
-              <div class="card-body pt-0">
-                <h5 class="card-title">19th Convocation of NSU</h5>
-                <p class="card-text">On Thursday, February 18, North South University held its 19th Convocation for our new graduates. It was a grand ceremony to bid farewell to our former students, now new graduates, with both a heavy and a happy
-                  heart.</p>
-                <a href="#" class="btn btn-primary">See Details</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-4 mt-3 col-sm-6 col-lg-4">
-            <div class="card profile-card-5">
-              <div class="card-img-block">
-                <img class="card-img-top" src="http://www.northsouth.edu/assets/images/PRO-Office/19conv-3.jpg" alt="Card image cap">
-              </div>
-              <div class="card-body pt-0">
-                <h5 class="card-title">19th Convocation of NSU</h5>
-                <p class="card-text">On Thursday, February 18, North South University held its 19th Convocation for our new graduates. It was a grand ceremony to bid farewell to our former students, now new graduates, with both a heavy and a happy
-                  heart.</p>
-                <a href="#" class="btn btn-primary">See Details</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-4 mt-3 col-sm-6 col-lg-4">
-            <div class="card profile-card-5">
-              <div class="card-img-block">
-                <img class="card-img-top" src="http://www.northsouth.edu/assets/images/PRO-Office/19conv-3.jpg" alt="Card image cap">
-              </div>
-              <div class="card-body pt-0">
-                <h5 class="card-title">19th Convocation of NSU</h5>
-                <p class="card-text">On Thursday, February 18, North South University held its 19th Convocation for our new graduates. It was a grand ceremony to bid farewell to our former students, now new graduates, with both a heavy and a happy
-                  heart.</p>
-                <a href="#" class="btn btn-primary">See Details</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-4 mt-3 col-sm-6 col-lg-4">
-            <div class="card profile-card-5">
-              <div class="card-img-block">
-                <img class="card-img-top" src="http://www.northsouth.edu/assets/images/PRO-Office/19conv-3.jpg" alt="Card image cap">
-              </div>
-              <div class="card-body pt-0">
-                <h5 class="card-title">19th Convocation of NSU</h5>
-                <p class="card-text">On Thursday, February 18, North South University held its 19th Convocation for our new graduates. It was a grand ceremony to bid farewell to our former students, now new graduates, with both a heavy and a happy
-                  heart.</p>
-                <a href="#" class="btn btn-primary">See Details</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-4 mt-3 col-sm-6 col-lg-4">
-            <div class="card profile-card-5">
-              <div class="card-img-block">
-                <img class="card-img-top" src="http://www.northsouth.edu/assets/images/PRO-Office/19conv-3.jpg" alt="Card image cap">
-              </div>
-              <div class="card-body pt-0">
-                <h5 class="card-title">19th Convocation of NSU</h5>
-                <p class="card-text">On Thursday, February 18, North South University held its 19th Convocation for our new graduates. It was a grand ceremony to bid farewell to our former students, now new graduates, with both a heavy and a happy
-                  heart.</p>
-                <a href="#" class="btn btn-primary">See Details</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-4 mt-3 col-sm-6 col-lg-4">
-            <div class="card profile-card-5">
-              <div class="card-img-block">
-                <img class="card-img-top" src="http://www.northsouth.edu/assets/images/PRO-Office/19conv-3.jpg" alt="Card image cap">
-              </div>
-              <div class="card-body pt-0">
-                <h5 class="card-title">19th Convocation of NSU</h5>
-                <p class="card-text">On Thursday, February 18, North South University held its 19th Convocation for our new graduates. It was a grand ceremony to bid farewell to our former students, now new graduates, with both a heavy and a happy
-                  heart.</p>
-                <a href="#" class="btn btn-primary">See Details</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-4 mt-3 col-sm-6 col-lg-4">
-            <div class="card profile-card-5">
-              <div class="card-img-block">
-                <img class="card-img-top" src="http://www.northsouth.edu/assets/images/PRO-Office/19conv-3.jpg" alt="Card image cap">
-              </div>
-              <div class="card-body pt-0">
-                <h5 class="card-title">19th Convocation of NSU</h5>
-                <p class="card-text">On Thursday, February 18, North South University held its 19th Convocation for our new graduates. It was a grand ceremony to bid farewell to our former students, now new graduates, with both a heavy and a happy
-                  heart.</p>
-                <a href="#" class="btn btn-primary">See Details</a>
-              </div>
-            </div>
-          </div>
-
+          <?php
+        }
+      }
+       ?>
         </div>
       </div>
-
-
     </section>
 
 
@@ -283,144 +183,37 @@
 
 
     <section style="height: 4rem">
-
     </section>
-
-
     <h2 style="text-align: center; font-size: 3rem;">UPCOMMING EVENTS</h2>
-
-
     <section style="height: 1rem">
-
     </section>
-
     <section style="width :100%;">
-
       <div class="container-fluid">
         <div class="row flex-row flex-nowrap">
-
+          <?php
+            $events="SELECT * FROM event";
+            $event_result=mysqli_query($db,$events);
+            if (mysqli_num_rows($event_result)>0) {
+              while ($event_record=mysqli_fetch_assoc($event_result)) {
+                ?>
           <div class="col-12 col-md-4 mt-3 col-sm-6 col-lg-3">
-            <div class="card profile-card-5">
+            <div class="card profile-card-5 card-style">
               <div class="card-img-block">
-                <img class="card-img-top" src="http://www.northsouth.edu/assets/images/PRO-Office/19conv-3.jpg" alt="Card image cap">
+                <img class="card-img-top event-data" src="photos/<?php echo $event_record['photo']; ?>" alt="Card image cap">
               </div>
               <div class="col-12 card-body pt-0">
-                <h5 class="card-title">19th Convocation of NSU</h5>
-                <p class="card-text">On Thursday, February 18, North South University held its 19th Convocation for our new graduates. It was a grand ceremony to bid farewell to our former students, now new graduates, with both a heavy and a happy
-                  heart.</p>
+                <h5 class="card-title card-title"><?php echo $event_record['title'];?></h5>
+                <p class="card-text card-inner-text"><?php echo $event_record['description']; ?></p>
                 <a href="#" class="btn btn-primary">See Details</a>
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-4 mt-3 col-sm-6 col-lg-3">
-            <div class="card profile-card-5">
-              <div class="card-img-block">
-                <img class="card-img-top" src="http://www.northsouth.edu/assets/images/PRO-Office/19conv-3.jpg" alt="Card image cap">
-              </div>
-              <div class="card-body pt-0">
-                <h5 class="card-title">19th Convocation of NSU</h5>
-                <p class="card-text">On Thursday, February 18, North South University held its 19th Convocation for our new graduates. It was a grand ceremony to bid farewell to our former students, now new graduates, with both a heavy and a happy
-                  heart.</p>
-                <a href="#" class="btn btn-primary">See Details</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-4 mt-3 col-sm-6 col-lg-3">
-            <div class="card profile-card-5">
-              <div class="card-img-block">
-                <img class="card-img-top" src="http://www.northsouth.edu/assets/images/PRO-Office/19conv-3.jpg" alt="Card image cap">
-              </div>
-              <div class="card-body pt-0">
-                <h5 class="card-title">19th Convocation of NSU</h5>
-                <p class="card-text">On Thursday, February 18, North South University held its 19th Convocation for our new graduates. It was a grand ceremony to bid farewell to our former students, now new graduates, with both a heavy and a happy
-                  heart.</p>
-                <a href="#" class="btn btn-primary">See Details</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-4 mt-3 col-sm-6 col-lg-3">
-            <div class="card profile-card-5">
-              <div class="card-img-block">
-                <img class="card-img-top" src="http://www.northsouth.edu/assets/images/PRO-Office/19conv-3.jpg" alt="Card image cap">
-              </div>
-              <div class="card-body pt-0">
-                <h5 class="card-title">19th Convocation of NSU</h5>
-                <p class="card-text">On Thursday, February 18, North South University held its 19th Convocation for our new graduates. It was a grand ceremony to bid farewell to our former students, now new graduates, with both a heavy and a happy
-                  heart.</p>
-                <a href="#" class="btn btn-primary">See Details</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-4 mt-3 col-sm-6 col-lg-3">
-            <div class="card profile-card-5">
-              <div class="card-img-block">
-                <img class="card-img-top" src="http://www.northsouth.edu/assets/images/PRO-Office/19conv-3.jpg" alt="Card image cap">
-              </div>
-              <div class="card-body pt-0">
-                <h5 class="card-title">19th Convocation of NSU</h5>
-                <p class="card-text">On Thursday, February 18, North South University held its 19th Convocation for our new graduates. It was a grand ceremony to bid farewell to our former students, now new graduates, with both a heavy and a happy
-                  heart.</p>
-                <a href="#" class="btn btn-primary">See Details</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-4 mt-3 col-sm-6 col-lg-3">
-            <div class="card profile-card-5">
-              <div class="card-img-block">
-                <img class="card-img-top" src="http://www.northsouth.edu/assets/images/PRO-Office/19conv-3.jpg" alt="Card image cap">
-              </div>
-              <div class="card-body pt-0">
-                <h5 class="card-title">19th Convocation of NSU</h5>
-                <p class="card-text">On Thursday, February 18, North South University held its 19th Convocation for our new graduates. It was a grand ceremony to bid farewell to our former students, now new graduates, with both a heavy and a happy
-                  heart.</p>
-                <a href="#" class="btn btn-primary">See Details</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-4 mt-3 col-sm-6 col-lg-3">
-            <div class="card profile-card-5">
-              <div class="card-img-block">
-                <img class="card-img-top" src="http://www.northsouth.edu/assets/images/PRO-Office/19conv-3.jpg" alt="Card image cap">
-              </div>
-              <div class="card-body pt-0">
-                <h5 class="card-title">19th Convocation of NSU</h5>
-                <p class="card-text">On Thursday, February 18, North South University held its 19th Convocation for our new graduates. It was a grand ceremony to bid farewell to our former students, now new graduates, with both a heavy and a happy
-                  heart.</p>
-                <a href="#" class="btn btn-primary">See Details</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-4 mt-3 col-sm-6 col-lg-3">
-            <div class="card profile-card-5">
-              <div class="card-img-block">
-                <img class="card-img-top" src="http://www.northsouth.edu/assets/images/PRO-Office/19conv-3.jpg" alt="Card image cap">
-              </div>
-              <div class="card-body pt-0">
-                <h5 class="card-title">19th Convocation of NSU</h5>
-                <p class="card-text">On Thursday, February 18, North South University held its 19th Convocation for our new graduates. It was a grand ceremony to bid farewell to our former students, now new graduates, with both a heavy and a happy
-                  heart.</p>
-                <a href="#" class="btn btn-primary">See Details</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-4 mt-3 col-sm-6 col-lg-3">
-            <div class="card profile-card-5">
-              <div class="card-img-block">
-                <img class="card-img-top" src="http://www.northsouth.edu/assets/images/PRO-Office/19conv-3.jpg" alt="Card image cap">
-              </div>
-              <div class="card-body pt-0">
-                <h5 class="card-title">19th Convocation of NSU</h5>
-                <p class="card-text">On Thursday, February 18, North South University held its 19th Convocation for our new graduates. It was a grand ceremony to bid farewell to our former students, now new graduates, with both a heavy and a happy
-                  heart.</p>
-                <a href="#" class="btn btn-primary">See Details</a>
-              </div>
-            </div>
-          </div>
-
+          <?php
+        }
+      }
+       ?>
         </div>
       </div>
-
-
     </section>
 
 
@@ -430,83 +223,54 @@
 
 
     <section style="height: 4rem">
-
     </section>
-
-
     <h2 style="text-align: center; font-size: 3rem;">All Clubs</h2>
-
-
     <section style="height: 1rem">
-
     </section>
-
-
-
 
     <section style="width :100%;">
-
       <div class="container-fluid">
         <div class="row flex-row">
-
           <!--Grid column-->
+          <?php
+            $events="SELECT * FROM all_clubs";
+            $event_result=mysqli_query($db,$events);
+            if (mysqli_num_rows($event_result)>0) {
+              while ($event_record=mysqli_fetch_assoc($event_result)) {
+            ?>
           <div class="col-4 col-md-4 mt-2 col-sm-6 col-lg-2">
-            <img class="col-12 col-md-12 mt-22 col-sm-12 col-lg-12 rounded-circle" alt="100x100" src="photos/nsuyesclub.png" data-holder-rendered="true">
-            <p style="text-align:center;" ><a href="yesClub/index.html">Vist Website</a></p>
+            <a href="<?php echo $event_record['club_link'];?>">
+              <img class="col-12 col-md-12 mt-22 col-sm-12 col-lg-12 rounded-circle" alt="100x100" src="photos/<?php echo $event_record['club_photo']; ?>" data-holder-rendered="true">
+            </a>
           </div>
-          <div class="col-4 col-md-4 mt-3 col-sm-6 col-lg-2">
-            <img class="col-12 col-md-12 mt-22 col-sm-12 col-lg-12 rounded-circle" alt="100x100" src="photos/nsucecclub.png" data-holder-rendered="true">
-              <p style="text-align:center;" ><a href="eceClub/index.html">Vist Website</a></p>
+          <?php
+            }
+          }
+          ?>
+          <?php
+            $events="SELECT * FROM all_clubs";
+            $event_result=mysqli_query($db,$events);
+            if (mysqli_num_rows($event_result)>0) {
+              while ($event_record=mysqli_fetch_assoc($event_result)) {
+            ?>
+          <div class="col-4 col-md-4 mt-2 col-sm-6 col-lg-2">
+            <a href="<?php echo $event_record['club_link'];?>">
+              <img class="col-12 col-md-12 mt-22 col-sm-12 col-lg-12 rounded-circle" alt="100x100" src="photos/<?php echo $event_record['club_photo']; ?>" data-holder-rendered="true">
+            </a>
           </div>
-          <div class="col-4 col-md-4 mt-3 col-sm-6 col-lg-2">
-            <img class="col-12 col-md-12 mt-22 col-sm-12 col-lg-12 rounded-circle" alt="100x100" src="photos/nsuearthclub.png" data-holder-rendered="true">
-          </div>
-          <div class="col-4 col-md-4 mt-3 col-sm-6 col-lg-2">
-            <img class="col-12 col-md-12 mt-22 col-sm-12 col-lg-12 rounded-circle" alt="100x100" src="photos/nsufinanceclub.png" data-holder-rendered="true">
-          </div>
-          <div class="col-4 col-md-4 mt-3 col-sm-6 col-lg-2">
-            <img class="col-12 col-md-12 mt-22 col-sm-12 col-lg-12 rounded-circle" alt="100x100" src="photos/nsumcclub.png" data-holder-rendered="true">
-          </div>
-          <div class="col-4 col-md-4 mt-3 col-sm-6 col-lg-2">
-            <img class="col-12 col-md-12 mt-22 col-sm-12 col-lg-12 rounded-circle" alt="100x100" src="photos/nsustudentclub.png" data-holder-rendered="true">
-            <p style="text-align:center;" ><a href="CDCClub/index.html">Vist Website</a></p>
-          </div>
-          <div class="col-4 col-md-4 mt-3 col-sm-6 col-lg-2">
-            <img class="col-12 col-md-12 mt-22 col-sm-12 col-lg-12 rounded-circle" alt="100x100" src="photos/nsuyefclub.png" data-holder-rendered="true">
-          </div>
-          <div class="col-4 col-md-4 mt-3 col-sm-6 col-lg-2">
-            <img class="col-12 col-md-12 mt-22 col-sm-12 col-lg-12 rounded-circle" alt="100x100" src="photos/nsuhrclub.jpg" data-holder-rendered="true">
-          </div>
-          <div class="col-4 col-md-4 mt-3 col-sm-6 col-lg-2">
-            <img class="col-12 col-md-12 mt-22 col-sm-12 col-lg-12 rounded-circle" alt="100x100" src="photos/nsuyesclub.png" data-holder-rendered="true">
-            <p style="text-align:center;" ><a href="yesClub/index.html">Vist Website</a></p>
-          </div>
-          <div class="col-4 col-md-4 mt-3 col-sm-6 col-lg-2">
-            <img class="col-12 col-md-12 mt-22 col-sm-12 col-lg-12 rounded-circle" alt="100x100" src="photos/nsucecclub.png" data-holder-rendered="true">
-            <p style="text-align:center;" ><a href="eceClub/index.html">Vist Website</a></p>
-          </div>
-          <div class="col-4 col-md-4 mt-3 col-sm-6 col-lg-2">
-            <img class="col-12 col-md-12 mt-22 col-sm-12 col-lg-12 rounded-circle" alt="100x100" src="photos/nsuearthclub.png" data-holder-rendered="true">
-          </div>
-          <div class="col-4 col-md-4 mt-3 col-sm-6 col-lg-2">
-            <img class="col-12 col-md-12 mt-22 col-sm-12 col-lg-12 rounded-circle" alt="100x100" src="photos/nsustudentclub.png" data-holder-rendered="true">
-            <p style="text-align:center;" ><a href="CDCClub/index.html">Vist Website</a></p>
-          </div>
-
-
+          <?php
+            }
+          }
+          ?>
         </div>
-
       </div>
-
-
     </section>
-
-
   </section>
-
-
-
   <section>
+
+
+
+
 
 
     <footer class="mainfooter" role="contentinfo">
@@ -571,12 +335,9 @@
             </div>
           </div>
 
-
         </div>
       </div>
     </footer>
-
-
 
   </section>
 
