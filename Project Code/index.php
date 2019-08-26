@@ -35,33 +35,54 @@
 
 
 
-  <section>
-    <!-- <nav class="navbar navbar-expand-sm bg-dark navbar-dark"> -->
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
-      <a class="navbar-brand" href="#">NSU Clubs</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+    <a class="navbar-brand" href="#">YES Club</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item active">
+          <a class="nav-link" href="#section1">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#section2">ABOUT</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#section3">AWARDS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#section4">UPCOMMING EVENT</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#section5">MEET OUR MEMBERS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#section6">JOINING REQUEST</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#section7">CONTACT</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+            MORE
+          </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#section41">CHAT ROOM</a>
+            <a class="dropdown-item" href="#section42">All Events</a>
+          </div>
+        </li>
 
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#">Disabled</a>
-          </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
-      </div>
-    </nav>
-  </section>
+      </ul>
+
+      <form class="form-inline my-2 my-lg-0">
+
+        <a href="dashboard/login.php " class="btn btn-outline-success my-2 my-sm-0" type="submit">Login as Club</a>
+        <a href="dashboard/login1.php " class="btn btn-outline-success my-2 my-sm-0" type="submit">Login as studnet</a>
+      </form>
+
+    </div>
+  </nav>
 
 
 
@@ -88,28 +109,24 @@
           <img src="photos/pic01.jpg" alt="NSU Club" width="1100" height="500">
           <div class="carousel-caption">
             <h3>auditorium</h3>
-            <p>We had such a great time in auditorium</p>
           </div>
         </div>
         <div class="carousel-item">
           <img src="photos/pic02.jpg" alt="NSU" width="1100" height="500">
           <div class="carousel-caption">
             <h3>robot wrestling</h3>
-            <p>Thank you, Team M4za1</p>
           </div>
         </div>
         <div class="carousel-item">
           <img src="photos/pic03.jpg" alt="Bd in NSU" width="1100" height="500">
           <div class="carousel-caption">
             <h3>NSU APC Club</h3>
-            <p>We love the them</p>
           </div>
         </div>
         <div class="carousel-item">
           <img src="photos/pic04.jpg" alt="Bd in NSU" width="1100" height="500">
           <div class="carousel-caption">
             <h3>Club fair</h3>
-            <p>Club fair is comming soon</p>
           </div>
         </div>
       </div>
@@ -163,9 +180,9 @@
                 <img class="card-img-top event-data" src="photos/<?php echo $event_record['photo']; ?>" alt="Card image cap">
               </div>
               <div class="col-12 card-body pt-0">
-                <h5 class="card-title card-title"><?php echo $event_record['title'];?></h5>
+                <h5 class="card-title title-card"><?php echo $event_record['title'];?></h5>
                 <p class="card-text card-inner-text"><?php echo $event_record['description']; ?></p>
-                <a href="#" class="btn btn-primary">See Details</a>
+                <a href="eventdetails.php" class="btn btn-primary">See Details</a>
               </div>
             </div>
           </div>
@@ -202,9 +219,9 @@
                 <img class="card-img-top event-data" src="photos/<?php echo $event_record['photo']; ?>" alt="Card image cap">
               </div>
               <div class="col-12 card-body pt-0">
-                <h5 class="card-title card-title"><?php echo $event_record['title'];?></h5>
+                <h5 class="card-title title-card"><?php echo $event_record['title'];?></h5>
                 <p class="card-text card-inner-text"><?php echo $event_record['description']; ?></p>
-                <a href="#" class="btn btn-primary">See Details</a>
+                <a href="eventdetails.php" class="btn btn-primary">See Details</a>
               </div>
             </div>
           </div>

@@ -1,4 +1,20 @@
 
+<!-- Calling  pre-built function -->
+<?php ob_start(); ?>
+<!--  Starting buffer output -->
+
+<?php
+// checking session validation
+if (!isset($_SESSION['dorypos_admin']) || !isset($_COOKIE['userlog']) ) {
+  header('Location: login.php');
+}
+
+   $root=$_SESSION['dorypos_root'];
+   $events="SELECT * FROM all_clubs where club_id=$root";
+   $event_result=mysqli_query($db,$events);
+
+     $event_record=mysqli_fetch_assoc($event_result);
+ ?>
 
 
 
@@ -11,12 +27,15 @@
   <link rel="icon" type="image/png" href="../assets/img/favicon.png">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <title>
-    Paper Dashboard 2 by Creative Tim
+    Welcome to Nsu | Aggregator
   </title>
   <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
   <!--     Fonts and icons     -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+  <!--sweetalert lib-->
+  <script src="../assets/js/sweetalert.min.js"></script>
+  <link rel="stylesheet" href="../assets/css/sweetalert.min.css">
   <!-- CSS Files -->
   <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
   <link href="../assets/css/paper-dashboard.css?v=2.0.0" rel="stylesheet" />
@@ -37,7 +56,7 @@
           </div>
         </a>
         <a href="http://www.creative-tim.com" class="simple-text logo-normal">
-          Creative Tim
+          <?php echo  $event_record['club_name']; ?>
           <!-- <div class="logo-image-big">
             <img src="../assets/img/logo-big.png">
           </div> -->
@@ -45,54 +64,51 @@
       </div>
       <div class="sidebar-wrapper">
         <ul class="nav">
+
           <li>
-            <a href="./dashboard.html">
-              <i class="nc-icon nc-bank"></i>
-              <p>Dashboard</p>
-            </a>
-          </li>
-          <li>
-            <a href="./icons.html">
+            <a href="create.php">
               <i class="nc-icon nc-diamond"></i>
-              <p>Icons</p>
+              <p>Create</p>
             </a>
           </li>
           <li>
-            <a href="./map.html">
-              <i class="nc-icon nc-pin-3"></i>
-              <p>Maps</p>
+            <a href="event.php">
+              <i class="nc-icon nc-calendar-60"></i>
+              <p>Our Events</p>
             </a>
           </li>
-          <li class="active ">
-            <a href="./notifications.html">
+          <li >
+            <a href="about.php">
               <i class="nc-icon nc-bell-55"></i>
-              <p>Notifications</p>
+              <p>About</p>
             </a>
           </li>
           <li>
-            <a href="./user.html">
+            <a href="member.php">
               <i class="nc-icon nc-single-02"></i>
-              <p>User Profile</p>
+              <p>Our Member</p>
             </a>
           </li>
           <li>
-            <a href="./tables.html">
-              <i class="nc-icon nc-tile-56"></i>
-              <p>Table List</p>
+            <a href="request.php">
+              <i class="nc-icon nc-paper"></i>
+              <p>Member Request</p>
             </a>
           </li>
           <li>
-            <a href="./typography.html">
-              <i class="nc-icon nc-caps-small"></i>
-              <p>Typography</p>
+            <a href="sms.php">
+              <i class="nc-icon nc-chat-33"></i>
+              <p>User Message</p>
             </a>
           </li>
-          <li class="active-pro">
-            <a href="./upgrade.html">
-              <i class="nc-icon nc-spaceship"></i>
-              <p>Upgrade to PRO</p>
+          <li>
+            <a href="logout.php">
+              <i class="nc-icon nc-button-power"></i>
+              <p>Logout</p>
             </a>
           </li>
+
+
         </ul>
       </div>
     </div>
@@ -108,7 +124,7 @@
                 <span class="navbar-toggler-bar bar3"></span>
               </button>
             </div>
-            <a class="navbar-brand" href="#pablo">Paper Dashboard 2</a>
+            <a class="navbar-brand" href="#pablo">  Welcome to Nsu | Aggregator</a>
           </div>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-bar navbar-kebab"></span>
@@ -161,4 +177,3 @@
         </div>
       </nav>
       <!-- End Navbar -->
-  

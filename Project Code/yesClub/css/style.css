@@ -393,3 +393,20 @@ ul.social-network li {
 #section7 {
   background-color: rgb(239, 239, 239);
 }
+
+
+
+.event-data{
+  height: 240px;
+}
+.card-style{
+  height: 450px;
+}
+.card-inner-text{
+ height: 100px;
+ overflow: hidden;
+}
+.title-card {
+  height: 30px;
+  overflow: hidden;
+}
