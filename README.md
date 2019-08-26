@@ -26,32 +26,32 @@ This report documents the process of designing, developing and testing a dynamic
                                                                                       
 ### Table of Contents
 1.	Inroduction
-1.1	Chapter Overview…………………………………………………………………………5
-1.2	The problem……………………………………………………………………………….5
-1.3	Project Overview…………………………………………………………………………..5
-1.4	Existing Solution…………………………………………………………………………...5
-1.5	Project Scoope……………………………………………………………………………...5
-1.5.1	Contact Us……………………………………………………………………………...6
-1.5.2	About Us………………………………………………………………………………6
-1.5.3	Offers………………………………………………………………………………….6
-1.5.4	Themes ……………………………………………………………………………….6
-1.5.5	Front Page…………………………………………………………………………….6
-2.	Purpose………………………………………………………………………………..7
-3.	Project Significance…………………………………………………………………..7
+1.1	Chapter Overview
+1.2	The problem
+1.3	Project Overview
+1.4	Existing Solution
+1.5	Project Scoope
+1.5.1	Contact Us
+1.5.2	About Us
+1.5.3	Offers
+1.5.4	Themes 
+1.5.5	Front Page
+2.	Purpose
+3.	Project Significance
 4.	Background
-4.1      Platform Choice……………………………………………………………………….7
-4.2      Softwate Choice……………………………………………………………………….8
-4.3       . Project Requirements
-4.3.4    Themes…………………………………………………………………………….........8
-4.3.5    Front End…………………………………………………………….............................8
+4.1 Platform Choice
+4.2 Softwate Choice
+4.3 Project Requirements
+4.3.4 Themes
+4.3.5 Front End
 5. User of a System
-5.1   Customer……………………………………………………………………………….9
-5.2  Administrator…………………………………………………………………………..9
-6. Project Summary………………………………………………………………………11
-7. Link…………………………………………………………………………………..11
+5.1 Customer…
+5.2 Administrator
+6. Project Summary
+7. Link
   
 
-### Introduction
+### 1. Introduction
 #### 1.2 Chapter Overview
 This chapter gives an introduction to the project by the problems solved by NSU Club Aggregator, the main objectives that we solved this problem through a dynamic web application.
 #### 1.2 The Problem
