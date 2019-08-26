@@ -25,20 +25,20 @@ This report documents the process of designing, developing and testing a dynamic
 
                                                                                       
 ### Table of Contents
-1.	Inroduction
-1.1	Chapter Overview
-1.2	The problem
-1.3	Project Overview
-1.4	Existing Solution
-1.5	Project Scoope
-1.5.1	Contact Us
-1.5.2	About Us
-1.5.3	Offers
-1.5.4	Themes 
-1.5.5	Front Page
-2.	Purpose
-3.	Project Significance
-4.	Background
+1.Inroduction
+1.1Chapter Overview
+1.2The problem
+1.3Project Overview
+1.4Existing Solution
+1.5Project Scoope
+1.5.1 Contact Us
+1.5.2 About Us
+1.5.3 Offers
+1.5.4 Themes 
+1.5.5 Front Page
+2. Purpose
+3. Project Significance
+4. Background
 4.1 Platform Choice
 4.2 Softwate Choice
 4.3 Project Requirements
@@ -49,7 +49,8 @@ This report documents the process of designing, developing and testing a dynamic
 5.2 Administrator
 6. Project Summary
 7. Link
-  
+
+
 
 ### 1. Introduction
 #### 1.2 Chapter Overview
